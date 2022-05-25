@@ -5,7 +5,7 @@
 
 #mynav {
   background-color: #EADCD9;
-  height: 80px;
+  height: 60px;
   padding: 0;
 }
 
@@ -22,23 +22,38 @@
   z-index: 10;
 }
 
+@media (min-width: 768px) {
+  #mynav {
+    height: 80px;
+  }
+}
+
 .logo {
   margin-left: 24px;
 }
 
 .swiper {
-  height: calc(60vh - 80px);
+  height: calc(40vh - 80px);
   width: 100%;
 }
 
 .swiper .swiper-slide img {
   display: block;
-  height: calc(60vh - 80px);
+  height: calc(40vh - 80px);
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+@media (min-width: 576px) {
+  .swiper {
+    height: calc(70vh - 80px);
+  }
+  .swiper .swiper-slide img {
+    height: calc(70vh - 80px);
+  }
 }
 
 @media (min-width: 768px) {

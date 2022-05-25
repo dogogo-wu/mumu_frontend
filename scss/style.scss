@@ -3,12 +3,18 @@ $color_sec : #5A705C;
 $color_grey : #E7E7E7;
 $color_txt : #6A6A6A;
 
+$small: 576px;
+$midium: 768px;
+$large: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
 *{
     transition: 0.5s;
 }
 #mynav{
     background-color: $color_primary;
-    height: 80px;
+    height: 60px;
     padding: 0;
     ul{
         font-weight: 600;
@@ -20,27 +26,37 @@ $color_txt : #6A6A6A;
     .mycollapse{
         z-index: 10;
     }
+    @media (min-width: $midium) {
+        height: 80px;
+    }
 }
 .logo{
     margin-left: 24px;
 }
 
 .swiper {
-    height: calc(60vh - 80px);
+    height: calc(40vh - 80px);
     width: 100%;
     .swiper-slide img{
         display: block;
-        height: calc(60vh - 80px);
+        height: calc(40vh - 80px);
         width: 100%;
         object-fit: cover;
         object-position: center;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $small) {
+        height: calc(70vh - 80px);
+        .swiper-slide img{
+            height: calc(70vh - 80px);
+        }
+    }
+    @media (min-width: $midium) {
         height: calc(100vh - 80px);
         .swiper-slide img{
             height: calc(100vh - 80px);
         }
     }
+
 }
 
 // .carousel-inner img {
