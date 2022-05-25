@@ -3,6 +3,9 @@ $color_sec : #5A705C;
 $color_grey : #E7E7E7;
 $color_txt : #6A6A6A;
 
+*{
+    transition: 0.5s;
+}
 #mynav{
     background-color: $color_primary;
     height: 80px;
@@ -14,19 +17,29 @@ $color_txt : #6A6A6A;
             padding: 24px 16px;
         }
     }
+    .mycollapse{
+        z-index: 10;
+    }
 }
 .logo{
     margin-left: 24px;
 }
+
 .swiper {
-    height: calc(100vh - 80px);
+    height: calc(60vh - 80px);
     width: 100%;
     .swiper-slide img{
         display: block;
-        height: calc(100vh - 80px);
+        height: calc(60vh - 80px);
         width: 100%;
         object-fit: cover;
         object-position: center;
+    }
+    @media (min-width: 768px) {
+        height: calc(100vh - 80px);
+        .swiper-slide img{
+            height: calc(100vh - 80px);
+        }
     }
 }
 

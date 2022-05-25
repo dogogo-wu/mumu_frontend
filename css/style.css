@@ -1,3 +1,8 @@
+* {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 #mynav {
   background-color: #EADCD9;
   height: 80px;
@@ -13,23 +18,36 @@
   padding: 24px 16px;
 }
 
+#mynav .mycollapse {
+  z-index: 10;
+}
+
 .logo {
   margin-left: 24px;
 }
 
 .swiper {
-  height: calc(100vh - 80px);
+  height: calc(60vh - 80px);
   width: 100%;
 }
 
 .swiper .swiper-slide img {
   display: block;
-  height: calc(100vh - 80px);
+  height: calc(60vh - 80px);
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    height: calc(100vh - 80px);
+  }
+  .swiper .swiper-slide img {
+    height: calc(100vh - 80px);
+  }
 }
 
 #myfooter {
