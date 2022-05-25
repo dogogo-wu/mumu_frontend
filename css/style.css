@@ -3,22 +3,19 @@
   transition: 0.5s;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 #mynav {
   background-color: #EADCD9;
   height: 60px;
   padding: 0;
-}
-
-#mynav ul {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-#mynav ul a {
-  padding: 24px 16px;
-}
-
-#mynav .mycollapse {
   z-index: 10;
 }
 
@@ -28,8 +25,75 @@
   }
 }
 
-.logo {
-  margin-left: 24px;
+#mynav .mycollapse {
+  background-color: #EADCD9;
+}
+
+#mynav .mylogo-area {
+  color: #6A6A6A;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 0px;
+}
+
+@media (min-width: 992px) {
+  #mynav .mylogo-area {
+    padding-left: 24px;
+  }
+}
+
+#mynav .mylogo-area .en {
+  font-weight: 300;
+  font-style: italic;
+}
+
+#mynav .mylogo-area .logo {
+  height: 60px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  #mynav .mylogo-area .logo {
+    height: 80px;
+    position: relative;
+  }
+}
+
+#mynav .mylogo-area .logo-txt {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #mynav .mylogo-area .logo-txt {
+    display: unset;
+  }
+}
+
+#mynav ul {
+  font-weight: 600;
+  font-size: 16px;
+  padding-right: 0px;
+  margin-right: 0;
+}
+
+@media (min-width: 992px) {
+  #mynav ul {
+    padding-right: 24px;
+  }
+}
+
+#mynav ul a {
+  padding: 24px 8px;
+}
+
+@media (min-width: 992px) {
+  #mynav ul a {
+    padding: 24px 16px;
+  }
 }
 
 .swiper {
@@ -45,6 +109,10 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.swiper .myswiper-btn {
+  color: #6A6A6A;
 }
 
 @media (min-width: 576px) {
@@ -63,6 +131,15 @@
   .swiper .swiper-slide img {
     height: calc(100vh - 80px);
   }
+}
+
+#about {
+  height: 100vh;
+}
+
+#map .mymap {
+  width: 100%;
+  height: 50vh;
 }
 
 #myfooter {
