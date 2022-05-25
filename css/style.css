@@ -16,7 +16,7 @@ ul {
   background-color: #EADCD9;
   height: 60px;
   padding: 0;
-  z-index: 10;
+  z-index: 5;
 }
 
 @media (min-width: 768px) {
@@ -34,11 +34,13 @@ ul {
   font-weight: 600;
   font-size: 16px;
   padding-left: 0px;
+  height: 60px;
 }
 
 @media (min-width: 992px) {
   #mynav .mylogo-area {
     padding-left: 24px;
+    height: 80px;
   }
 }
 
@@ -77,7 +79,6 @@ ul {
   font-weight: 600;
   font-size: 16px;
   padding-right: 0px;
-  margin-right: 0;
 }
 
 @media (min-width: 992px) {
@@ -86,24 +87,48 @@ ul {
   }
 }
 
-#mynav ul a {
+#mynav ul li {
+  width: 100%;
+}
+
+#mynav ul li::before {
+  content: " ";
+  width: 60%;
+  height: 2px;
+  border-radius: 1px;
+  display: block;
+  background-color: #E7E7E7;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #mynav ul li {
+    width: unset;
+  }
+  #mynav ul li::before {
+    display: none;
+  }
+}
+
+#mynav ul li a {
   padding: 24px 8px;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
-  #mynav ul a {
+  #mynav ul li a {
     padding: 24px 16px;
   }
 }
 
 .swiper {
-  height: calc(40vh - 80px);
+  height: calc(50vh - 80px);
   width: 100%;
 }
 
 .swiper .swiper-slide img {
   display: block;
-  height: calc(40vh - 80px);
+  height: calc(50vh - 80px);
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -117,10 +142,10 @@ ul {
 
 @media (min-width: 576px) {
   .swiper {
-    height: calc(70vh - 80px);
+    height: calc(75vh - 80px);
   }
   .swiper .swiper-slide img {
-    height: calc(70vh - 80px);
+    height: calc(75vh - 80px);
   }
 }
 

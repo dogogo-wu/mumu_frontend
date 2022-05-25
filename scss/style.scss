@@ -24,7 +24,7 @@ ul{
     background-color: $color_primary;
     height: 60px;
     padding: 0;
-    z-index: 10;
+    z-index: 5;
     @media (min-width: $midium) {
         height: 80px;
     }
@@ -37,8 +37,10 @@ ul{
         font-weight: 600;
         font-size: 16px;
         padding-left: 0px;
+        height: 60px;
         @media (min-width: $large) {
             padding-left: 24px;
+            height: 80px;
         }
 
         .en{
@@ -71,23 +73,43 @@ ul{
         @media (min-width: $large) {
             padding-right: 24px;
         }
-        a{
-            padding: 24px 8px;
-
-            @media (min-width: $large) {
-                padding: 24px 16px;
+        li{
+            &::before{
+                content: " ";
+                width: 60%;
+                height: 2px;
+                border-radius: 1px;
+                display: block;
+                background-color: $color_grey;
+                margin: 0 auto;
+            }
+            width: 100%;
+            @media (min-width: $midium) {
+                width: unset;
+                &::before{
+                    display: none;
+                }
+            }
+            a{
+                padding: 24px 8px;
+                text-align: center;
+                
+                @media (min-width: $large) {
+                    padding: 24px 16px;
+                }
             }
         }
+        
     }
 }
 
 
 .swiper {
-    height: calc(40vh - 80px);
+    height: calc(50vh - 80px);
     width: 100%;
     .swiper-slide img{
         display: block;
-        height: calc(40vh - 80px);
+        height: calc(50vh - 80px);
         width: 100%;
         object-fit: cover;
         object-position: center;
@@ -96,9 +118,9 @@ ul{
         color: $color_txt;
     }
     @media (min-width: $small) {
-        height: calc(70vh - 80px);
+        height: calc(75vh - 80px);
         .swiper-slide img{
-            height: calc(70vh - 80px);
+            height: calc(75vh - 80px);
         }
     }
     @media (min-width: $midium) {
