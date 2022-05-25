@@ -1,0 +1,41 @@
+$color_primary : #EADCD9;
+$color_sec : #5A705C;
+$color_grey : #E7E7E7;
+$color_txt : #6A6A6A;
+
+#mynav{
+    background-color: $color_primary;
+    height: 80px;
+    padding: 0;
+    ul{
+        font-weight: 600;
+        font-size: 16px;
+        a{
+            padding: 24px 16px;
+        }
+    }
+}
+.logo{
+    margin-left: 24px;
+}
+.swiper {
+    height: calc(100vh - 80px);
+    width: 100%;
+    .swiper-slide img{
+        display: block;
+        height: calc(100vh - 80px);
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+// .carousel-inner img {
+//     height: calc(100vh - 80px);
+//     object-fit: cover;
+// }
+
+#myfooter{
+    background-color: $color_primary;
+    height: 155px;
+}

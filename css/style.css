@@ -1,0 +1,39 @@
+#mynav {
+  background-color: #EADCD9;
+  height: 80px;
+  padding: 0;
+}
+
+#mynav ul {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#mynav ul a {
+  padding: 24px 16px;
+}
+
+.logo {
+  margin-left: 24px;
+}
+
+.swiper {
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+.swiper .swiper-slide img {
+  display: block;
+  height: calc(100vh - 80px);
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#myfooter {
+  background-color: #EADCD9;
+  height: 155px;
+}
+/*# sourceMappingURL=style.css.map */
