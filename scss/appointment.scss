@@ -1,0 +1,102 @@
+$color_primary : #EADCD9;
+$color_sec : #5A705C;
+$color_grey : #E7E7E7;
+$color_txt : #6A6A6A;
+
+$small: 576px;
+$midium: 768px;
+$large: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$title_font:20px;
+$text_font:16px;
+$btn_font:14px;
+
+
+*{
+    transition: 0.5s;
+    color: $color_txt;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+#appointment{
+
+    #title{
+        width: 100px;
+        height: 100px;
+        font-size: $title_font;
+        color:$color_txt;
+    }
+    .divider{
+        width: 80%;
+        height: 5px;
+        background-color: $color_primary;
+    }
+    #book{
+        @media (min-width: $small) {
+            width: 100%;
+        }
+        @media (min-width: $midium) {
+            width: 90%;
+        }
+        @media (min-width: $large) {
+            width: 80%;
+        }
+        
+        .appointment_notice{
+            background-color: $color_grey;
+            padding: 30px;
+            border-radius: 10px;
+
+            @media (min-width: $small) {
+                width: 100%;
+            }
+            @media (min-width: $medium) {
+                width: 40%;
+            }
+            @media (min-width: $large) {
+                width: 40%;
+            }
+        }
+        .divider2{
+            width: 5px;
+            height: 450px;
+            background-color: #6A6A6A;
+            border-radius: 5px;
+        }
+
+        .appointment_info{
+            @media (min-width: $small) {
+                width: 100%;
+            }
+            @media (min-width: $medium) {
+                width: 40%;
+            }
+            @media (min-width: $large) {
+                width: 40%;
+            }
+
+            width: 400px;
+            height: 550px;
+            background-color: #ffffff;
+
+            .line_info{
+
+                width: 200px;
+                height: 200px;
+                background-color: #5A705C;
+                .line_title{
+                    font-size: $title_font;
+                }
+            }
+        }
+
+    }
+}

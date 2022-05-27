@@ -1,0 +1,83 @@
+* {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #6A6A6A;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#appointment #title {
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  color: #6A6A6A;
+}
+
+#appointment .divider {
+  width: 80%;
+  height: 5px;
+  background-color: #EADCD9;
+}
+
+@media (min-width: 576px) {
+  #appointment #book {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #appointment #book {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  #appointment #book {
+    width: 80%;
+  }
+}
+
+#appointment #book .appointment_notice {
+  background-color: #E7E7E7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (min-width: 576px) {
+  #appointment #book .appointment_notice {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  #appointment #book .appointment_notice {
+    width: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  #appointment #book .appointment_notice {
+    width: 40%;
+  }
+}
+
+#appointment #book .divider2 {
+  width: 5px;
+  height: 450px;
+  background-color: #6A6A6A;
+  border-radius: 5px;
+}
+
+#appointment #book .appointment_info {
+  width: 400px;
+  height: 550px;
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=appointment.css.map */
