@@ -85,18 +85,32 @@ ul{
         .myicon_area{
             display: flex;
             justify-content: center;
-            img{
-                height: 30px;
-                width: 30px;
-                margin-left: 6px;
-                margin-right: 6px;
-            }
-            @media (min-width: $medium) {
-                display: none;
+            a{
+                padding: 16px 6px;
+                margin: 8px 2px;
                 img{
-                    height: 0px;
-                    width: 0px;
+                    height: 30px;
+                    width: 30px;
+                    margin-left: 6px;
+                    margin-right: 6px;
                 }
+            }
+
+            @media (min-width: $medium) {
+                display: block;
+                position: fixed;
+                z-index: 10;
+                transform: translateY(-50%);
+                top: 50%;
+                right: 20px;
+                a{
+                    padding: 6px;
+                    margin: 6px 0px;
+                    img{
+                        margin: 6px;
+                    }
+                }
+
             }
             
         }
