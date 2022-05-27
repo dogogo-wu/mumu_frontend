@@ -4,7 +4,7 @@ $color_grey : #E7E7E7;
 $color_txt : #6A6A6A;
 
 $small: 576px;
-$midium: 768px;
+$medium: 768px;
 $large: 992px;
 $xl: 1200px;
 $xxl: 1400px;
@@ -18,6 +18,7 @@ a {
 ul{
     list-style: none;
     padding: 0;
+    margin-left: 0px;
 }
 
 #mynav{
@@ -25,7 +26,7 @@ ul{
     height: 60px;
     padding: 0;
     z-index: 5;
-    @media (min-width: $midium) {
+    @media (min-width: $medium) {
         height: 80px;
     }
 
@@ -43,24 +44,28 @@ ul{
             height: 80px;
         }
 
+        a{
+            margin-right: 8px;
+            .logo{
+                height: 60px;
+                position: absolute;
+                transform: translateX(-50%);
+                left: 50%;
+                top: 0;
+                @media (min-width: $medium) {
+                    height: 80px;
+                    position: relative;
+                }
+            }
+        }
         .en{
             font-weight: 300;
             font-style: italic;
         }
-        .logo{
-            height: 60px;
-            position: absolute;
-            transform: translateX(-50%);
-            left: 50%;
-            top: 0;
-            @media (min-width: $midium) {
-                height: 80px;
-                position: relative;
-            }
-        }
+        
         .logo-txt{
             display: none;
-            @media (min-width: $midium) {
+            @media (min-width: $medium) {
                 display: unset;
             }
         }
@@ -70,21 +75,43 @@ ul{
         font-weight: 600;
         font-size: 16px;
         padding-right: 0px;
+        min-height: 100vh;
+        @media (min-width: $medium) {
+            min-height: unset;
+        }
         @media (min-width: $large) {
             padding-right: 24px;
         }
+        .myicon_area{
+            display: flex;
+            justify-content: center;
+            img{
+                height: 30px;
+                width: 30px;
+                margin-left: 6px;
+                margin-right: 6px;
+            }
+            @media (min-width: $medium) {
+                display: none;
+                img{
+                    height: 0px;
+                    width: 0px;
+                }
+            }
+            
+        }
         li{
             &::before{
-                content: " ";
-                width: 60%;
+                content: "";
+                width: 80%;
                 height: 2px;
                 border-radius: 1px;
                 display: block;
-                background-color: $color_grey;
+                background-color: #C0B8B8;
                 margin: 0 auto;
             }
             width: 100%;
-            @media (min-width: $midium) {
+            @media (min-width: $medium) {
                 width: unset;
                 &::before{
                     display: none;
@@ -123,13 +150,12 @@ ul{
             height: calc(75vh - 80px);
         }
     }
-    @media (min-width: $midium) {
+    @media (min-width: $medium) {
         height: calc(100vh - 80px);
         .swiper-slide img{
             height: calc(100vh - 80px);
         }
     }
-
 }
 
 #about{
@@ -146,5 +172,58 @@ ul{
 
 #myfooter{
     background-color: $color_primary;
-    height: 155px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: $medium) {
+        height: 155px;
+    }
+
+    p{
+        color: $color_txt;
+        margin: 0px;
+        font-size: 12px;
+    }
+    .footer_info{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: $medium) {
+            flex-direction: row;
+        }
+        .left_info, .right_info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (min-width: $medium) {
+                justify-content: center;
+                align-items: flex-start;
+            }
+        }
+        .left_info{
+            margin-right: 0px;
+            @media (min-width: $medium) {
+                margin-right: 64px;
+            }
+        }
+        .logo_foot{
+            height: 60px;
+            @media (min-width: $medium) {
+                height: 105px;
+            }
+        }
+    }
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+        @media (min-width: $medium) {
+            flex-direction: row;
+            margin-top: 0px;
+        }
+    }
 }
