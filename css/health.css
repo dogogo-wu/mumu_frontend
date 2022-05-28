@@ -71,7 +71,19 @@
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
-  width: 115px;
+  width: 90px;
+  padding: 8px;
+}
+
+#health .mytab_area li button:hover {
+  background-color: #ecc7bf;
+}
+
+@media (min-width: 768px) {
+  #health .mytab_area li button {
+    width: 115px;
+    padding: 8px 16px;
+  }
 }
 
 #health .mytab_area li .nav-link.active {
@@ -81,7 +93,7 @@
 
 #health .mytab_area .tab_divider {
   margin-top: 6px;
-  width: 380px;
+  width: 300px;
   height: 2px;
   border-radius: 2px;
   background-color: #6A6A6A;
