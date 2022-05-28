@@ -13,7 +13,7 @@ $title_font:20px;
 $text_font:16px;
 $btn_font:14px;
 
-#health{
+#gallery{
     color: $color_txt;
     display: flex;
     flex-direction: column;
@@ -62,6 +62,7 @@ $btn_font:14px;
                     width: 115px;
                     padding: 8px 16px;
                 }
+                
             }
             .nav-link.active{
                 background-color: #838383;
@@ -94,39 +95,36 @@ $btn_font:14px;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-                @media (min-width: $medium) {
-                    flex-direction: row;
-                }
-                
-                ul{
-                    list-style: unset;
-                    li{
-                        margin-left: 32px;
-                        margin-right: 16px;
-                        padding: 12px 0px;
-                    }
-                }
-                .left_area, .right_area{
-                    background-color: $color_grey;
-                    border-radius: 20px;
-                    margin: 10px;
-                    padding: 10px;
-                    flex-basis: 100%;
+
+                .tab_subtitle{
+                    text-align: center;
+                    font-size: $title_font;
                     font-weight: 600;
-                    .my_subtitle{
-                        font-size: $title_font;
-                        padding-bottom: 16px;
-                        text-align: center;
-                    }
+                    padding-top: 32px;
+                    padding-bottom: 16px;
                 }
-                .divider2{
-                    width: 0px;
-                    margin: 10px 0px;
-                    background-color: #A9A9A9;
-                    border-radius: 5px;
-                    @media (min-width: $medium) {
-                        width: 5px;
-                        margin: 20px 0px;
+                .tab_pic{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .img_div{
+                        padding: 16px;
+                        // width: 20%;
+                        img{
+                            width: 150px;
+                            aspect-ratio: 16/16;
+                            object-fit: cover;
+                            object-position: center;
+                            border-radius: 16px;
+                            transition: 0.2s;
+                            &:hover{
+                                box-shadow: 2px 2px 4px 1px gray;
+                                cursor: pointer;
+                            }
+                            @media (min-width: $medium) {
+                                width: 215px;
+                            }
+                        }
                     }
                 }
             }
