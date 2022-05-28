@@ -31,17 +31,23 @@ $btn_font:14px;
         justify-content: center;
     }
     .divider{
-        width: 80%;
+        width: 90%;
         height: 5px;
         border-radius: 5px;
         background-color: $color_primary;
+        @media (min-width: $medium) {
+            width: 80%;
+        }
     }
     .mytab_area{
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-top: 36px;
-        width: 80%;
+        width: 100%;
+        @media (min-width: $medium) {
+            width: 80%;
+        }
         li{
             margin: 0px 6px;
             @media (min-width: $medium) {
@@ -100,7 +106,7 @@ $btn_font:14px;
                     text-align: center;
                     font-size: $title_font;
                     font-weight: 600;
-                    padding-top: 32px;
+                    padding-top: 16px;
                     padding-bottom: 16px;
                 }
                 .tab_pic{
@@ -108,8 +114,11 @@ $btn_font:14px;
                     flex-wrap: wrap;
                     justify-content: center;
                     .img_div{
-                        padding: 16px;
+                        padding: 6px;
                         // width: 20%;
+                        @media (min-width: $medium) {
+                            padding: 16px;
+                        }
                         img{
                             width: 150px;
                             aspect-ratio: 16/16;
