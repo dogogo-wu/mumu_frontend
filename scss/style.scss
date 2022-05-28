@@ -35,8 +35,8 @@ ul{
     }
     .mylogo-area{
         color: $color_txt;
-        font-weight: 600;
         font-size: 16px;
+        font-weight: 600;
         padding-left: 0px;
         height: 60px;
         @media (min-width: $large) {
@@ -58,16 +58,16 @@ ul{
                 }
             }
         }
-        .en{
-            font-weight: 300;
-            font-style: italic;
-        }
         
         .logo-txt{
             display: none;
             @media (min-width: $medium) {
                 display: unset;
             }
+        }
+        .en{
+            font-weight: 300;
+            font-style: italic;
         }
     }
     
@@ -169,6 +169,10 @@ ul{
         .swiper-slide img{
             height: calc(100vh - 80px);
         }
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #95AFD6;
+        
     }
 }
 
