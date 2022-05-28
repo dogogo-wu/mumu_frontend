@@ -1,5 +1,4 @@
 #health {
-  min-height: 100vh;
   color: #6A6A6A;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,11 +34,11 @@
 #health .divider {
   width: 80%;
   height: 5px;
-  border-radius: 2.5px;
+  border-radius: 5px;
   background-color: #EADCD9;
 }
 
-#health .mytab_btn_area {
+#health .mytab_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +53,57 @@
   width: 80%;
 }
 
-#health .tab_content_area {
+#health .mytab_area li {
+  margin: 0px 20px;
+}
+
+#health .mytab_area li button {
+  color: #6A6A6A;
+  font-weight: 600;
+  background-color: #EADCD9;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+  width: 115px;
+}
+
+#health .mytab_area li .nav-link.active {
+  background-color: #838383;
+  color: white;
+}
+
+#health .mytab_area .tab_divider {
+  margin-top: 6px;
+  width: 460px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #6A6A6A;
+}
+
+#health .mytab_area .outer_tab_content {
+  padding-top: 32px;
+  padding-bottom: 64px;
+  width: 100%;
+}
+
+#health .mytab_area .outer_tab_content .add_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+#health .mytab_area .outer_tab_content .tab_content_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,8 +112,36 @@
           justify-content: center;
 }
 
-#health .tab_content_area .left_area, #health .tab_content_area .right_area {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+#health .mytab_area .outer_tab_content .tab_content_area ul {
+  list-style: unset;
+}
+
+#health .mytab_area .outer_tab_content .tab_content_area ul li {
+  margin-left: 32px;
+  margin-right: 16px;
+  padding: 12px 0px;
+}
+
+#health .mytab_area .outer_tab_content .tab_content_area .left_area, #health .mytab_area .outer_tab_content .tab_content_area .right_area {
+  background-color: #E7E7E7;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-weight: 600;
+}
+
+#health .mytab_area .outer_tab_content .tab_content_area .left_area .my_subtitle, #health .mytab_area .outer_tab_content .tab_content_area .right_area .my_subtitle {
+  font-size: 20px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+#health .mytab_area .outer_tab_content .tab_content_area .divider2 {
+  width: 5px;
+  margin: 20px 0px;
+  background-color: #A9A9A9;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=health.css.map */

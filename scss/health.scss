@@ -14,7 +14,6 @@ $text_font:16px;
 $btn_font:14px;
 
 #health{
-    min-height: 100vh;
     color: $color_txt;
     display: flex;
     flex-direction: column;
@@ -33,22 +32,83 @@ $btn_font:14px;
     .divider{
         width: 80%;
         height: 5px;
-        border-radius: 2.5px;
+        border-radius: 5px;
         background-color: $color_primary;
     }
-    .mytab_btn_area{
+    .mytab_area{
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-top: 36px;
         width: 80%;
-    }
-    .tab_content_area{
-        display: flex;
-        justify-content: center;
-        .left_area, .right_area{
-            flex-basis: 50%;
+        li{
+            margin: 0px 20px;
+            button{
+                color: $color_txt;
+                font-weight: 600;
+                background-color: $color_primary;
+                border-radius: 10px;
+                box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+                width: 115px;
+            }
+            .nav-link.active{
+                background-color: #838383;
+                color: white;
+            }
+        }
+        .tab_divider{
+            margin-top: 6px;
+            width: 460px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: $color_txt;
+        }
+        .outer_tab_content{
+            padding-top: 32px;
+            padding-bottom: 64px;
+            width: 100%;
+            .add_info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+            }
+            .tab_content_area{
+                display: flex;
+                justify-content: center;
+                
+                ul{
+                    list-style: unset;
+                    li{
+                        margin-left: 32px;
+                        margin-right: 16px;
+                        padding: 12px 0px;
+                    }
+                }
+                .left_area, .right_area{
+                    background-color: $color_grey;
+                    border-radius: 20px;
+                    margin: 10px;
+                    padding: 10px;
+                    flex-basis: 100%;
+                    font-weight: 600;
+                    .my_subtitle{
+                        font-size: $title_font;
+                        padding-bottom: 16px;
+                        text-align: center;
+                    }
+                }
+                .divider2{
+                    width: 5px;
+                    margin: 20px 0px;
+                    background-color: #A9A9A9;
+                    border-radius: 5px;
+                }
+            }
         }
     }
+    
+    
 }
 
