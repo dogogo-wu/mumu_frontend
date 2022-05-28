@@ -1,0 +1,54 @@
+$color_primary : #EADCD9;
+$color_sec : #5A705C;
+$color_grey : #E7E7E7;
+$color_txt : #6A6A6A;
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$title_font:20px;
+$text_font:16px;
+$btn_font:14px;
+
+#health{
+    min-height: 100vh;
+    color: $color_txt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        margin: 0px;
+    }
+    .mytitle{
+        font-size: $title_font;
+        font-weight: 600;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .divider{
+        width: 80%;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: $color_primary;
+    }
+    .mytab_btn_area{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 36px;
+        width: 80%;
+    }
+    .tab_content_area{
+        display: flex;
+        justify-content: center;
+        .left_area, .right_area{
+            flex-basis: 50%;
+        }
+    }
+}
+

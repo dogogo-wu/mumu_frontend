@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>暮沐美學</title>
+    <title>暮沐美學-衛教資訊</title>
 
     <!-- ------------------- CDN CSS Section ------------------- -->
     <!-- Bootstrap 5.1.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- FontAwesome -->
@@ -20,6 +18,7 @@
 
     <!-- ------------------- My CSS Section ------------------- -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/health.css">
 </head>
 
 <body>
@@ -73,42 +72,50 @@
     </nav>
 
     <main>
-        <section id="banner">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./img/banner01.jpg">
+        <section id="health">
+            <div class="mytitle">
+                衛教資訊
+            </div>
+            <div class="divider"></div>
+            <div class="mytab_btn_area">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab">Contact</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab_content_area tab-pane fade show active" id="home-tab-pane" role="tabpanel" tabindex="0">
+                        <div class="left_area">
+                            <div class="my_subtitle">
+                                術前準備
+                            </div>
+                            <ul>
+                                <li>紋繡前一天注意盡量避免熬夜，若女性月事來先暫停操作，建議紋繡前三天作息正常，才不會影響肌膚的狀態及穩定度！</li>
+                            </ul>
+                        </div>
+                        <div class="right_area">
+
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./img/banner02.jpeg">
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" tabindex="0">
+
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" tabindex="0">
+
+                    </div>
+                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" tabindex="0">
+
                     </div>
                 </div>
-                <!-- <div class="myswiper-btn swiper-button-next"></div>
-                <div class="myswiper-btn swiper-button-prev"></div> -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="">
-
-            </div>
-        </section>
-        <section id="service">
-            <div class="">
-
-            </div>
-        </section>
-        <section id="faq">
-            <div class="">
-
-            </div>
-        </section>
-        <section id="map">
-            <div class="mymap">
-                <iframe class="w-100 h-100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7280.504087726315!2d120.68146719423413!3d24.16289190429414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917a090fac0d9%3A0x1b36831166da4871!2z5rKQ5oWV576O5a24!5e0!3m2!1szh-TW!2stw!4v1653485724716!5m2!1szh-TW!2stw"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
@@ -137,32 +144,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <!-- Swiper -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- ------------------- JS Section ------------------- -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            // cssMode: true,
-            speed: 1200,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            keyboard: true,
-        });
-    </script>
     <script>
         AOS.init();
     </script>
