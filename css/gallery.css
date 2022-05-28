@@ -1,0 +1,141 @@
+#gallery {
+  color: #6A6A6A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh;
+}
+
+#gallery p {
+  margin: 0px;
+}
+
+#gallery .mytitle {
+  font-size: 20px;
+  font-weight: 600;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#gallery .divider {
+  width: 80%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #EADCD9;
+}
+
+#gallery .mytab_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 36px;
+  width: 80%;
+}
+
+#gallery .mytab_area li {
+  margin: 0px 6px;
+}
+
+@media (min-width: 768px) {
+  #gallery .mytab_area li {
+    margin: 0px 20px;
+  }
+}
+
+#gallery .mytab_area li button {
+  color: #6A6A6A;
+  font-weight: 600;
+  background-color: #EADCD9;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+  width: 115px;
+}
+
+#gallery .mytab_area li .nav-link.active {
+  background-color: #838383;
+  color: white;
+}
+
+#gallery .mytab_area .tab_divider {
+  margin-top: 6px;
+  width: 380px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #6A6A6A;
+}
+
+@media (min-width: 768px) {
+  #gallery .mytab_area .tab_divider {
+    width: 460px;
+  }
+}
+
+#gallery .mytab_area .outer_tab_content {
+  padding-top: 32px;
+  padding-bottom: 64px;
+  width: 100%;
+}
+
+#gallery .mytab_area .outer_tab_content .add_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+
+#gallery .mytab_area .outer_tab_content .tab_content_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #gallery .mytab_area .outer_tab_content .tab_content_area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=gallery.css.map */
