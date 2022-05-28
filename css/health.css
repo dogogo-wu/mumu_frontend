@@ -10,6 +10,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 80vh;
 }
 
 #health p {
@@ -54,7 +55,13 @@
 }
 
 #health .mytab_area li {
-  margin: 0px 20px;
+  margin: 0px 6px;
+}
+
+@media (min-width: 768px) {
+  #health .mytab_area li {
+    margin: 0px 20px;
+  }
 }
 
 #health .mytab_area li button {
@@ -74,10 +81,16 @@
 
 #health .mytab_area .tab_divider {
   margin-top: 6px;
-  width: 460px;
+  width: 380px;
   height: 2px;
   border-radius: 2px;
   background-color: #6A6A6A;
+}
+
+@media (min-width: 768px) {
+  #health .mytab_area .tab_divider {
+    width: 460px;
+  }
 }
 
 #health .mytab_area .outer_tab_content {
@@ -101,6 +114,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-weight: 600;
+  padding-bottom: 16px;
 }
 
 #health .mytab_area .outer_tab_content .tab_content_area {
@@ -110,6 +124,19 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #health .mytab_area .outer_tab_content .tab_content_area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 #health .mytab_area .outer_tab_content .tab_content_area ul {
@@ -139,9 +166,16 @@
 }
 
 #health .mytab_area .outer_tab_content .tab_content_area .divider2 {
-  width: 5px;
-  margin: 20px 0px;
+  width: 0px;
+  margin: 10px 0px;
   background-color: #A9A9A9;
   border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  #health .mytab_area .outer_tab_content .tab_content_area .divider2 {
+    width: 5px;
+    margin: 20px 0px;
+  }
 }
 /*# sourceMappingURL=health.css.map */

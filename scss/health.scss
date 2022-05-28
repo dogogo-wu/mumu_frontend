@@ -18,6 +18,7 @@ $btn_font:14px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 80vh;
     p{
         margin: 0px;
     }
@@ -42,7 +43,10 @@ $btn_font:14px;
         margin-top: 36px;
         width: 80%;
         li{
-            margin: 0px 20px;
+            margin: 0px 6px;
+            @media (min-width: $medium) {
+                margin: 0px 20px;
+            }
             button{
                 color: $color_txt;
                 font-weight: 600;
@@ -50,6 +54,7 @@ $btn_font:14px;
                 border-radius: 10px;
                 box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
                 width: 115px;
+                
             }
             .nav-link.active{
                 background-color: #838383;
@@ -58,10 +63,13 @@ $btn_font:14px;
         }
         .tab_divider{
             margin-top: 6px;
-            width: 460px;
+            width: 380px;
             height: 2px;
             border-radius: 2px;
             background-color: $color_txt;
+            @media (min-width: $medium) {
+                width: 460px;
+            }
         }
         .outer_tab_content{
             padding-top: 32px;
@@ -73,10 +81,15 @@ $btn_font:14px;
                 justify-content: center;
                 align-items: center;
                 font-weight: 600;
+                padding-bottom: 16px;
             }
             .tab_content_area{
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
+                @media (min-width: $medium) {
+                    flex-direction: row;
+                }
                 
                 ul{
                     list-style: unset;
@@ -100,10 +113,14 @@ $btn_font:14px;
                     }
                 }
                 .divider2{
-                    width: 5px;
-                    margin: 20px 0px;
+                    width: 0px;
+                    margin: 10px 0px;
                     background-color: #A9A9A9;
                     border-radius: 5px;
+                    @media (min-width: $medium) {
+                        width: 5px;
+                        margin: 20px 0px;
+                    }
                 }
             }
         }
