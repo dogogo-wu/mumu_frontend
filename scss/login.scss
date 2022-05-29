@@ -9,6 +9,79 @@ $large: 992px;
 $xl: 1200px;
 $xxl: 1400px;
 
-#login{
-    min-height: 80vh;
+$title_font:20px;
+$text_font:16px;
+$btn_font:14px;
+
+#login_sec{
+    .login {
+        height: calc(100vh - 235px);
+        // background-color: rgb(229, 231, 235);
+        background-color: #fff;
+        color: $color_txt;
+        .loginform {
+            width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.2);
+            @media (max-width: 440px) {
+                width: 90%;
+            }
+            .login_title{
+                font-size: $title_font;
+                text-align: center;
+                font-weight: 600;
+            }
+            button {
+                color: $color_txt;
+                font-weight: 600;
+                background-color: $color_primary;
+                border-radius: 10px;
+                border-width: 0px;
+                width: 120px;
+                padding: 8px;
+                &:hover{
+                    background-color: #ecc7bf;
+                }
+            }
+
+        }
+    }
+
+
+
+}
+
+#login_sec2{
+    .login {
+        height: 100vh;
+        background-color: rgb(100, 100, 100);
+
+        .loginform {
+            width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.2);
+            @media (max-width: 440px) {
+                width: 90%;
+            }
+            .img_div{
+                text-align: center;
+                img{
+                    width: 80px;
+                    border-radius: 40px;
+                    @media (min-width: $medium) {
+                        width: 120px;
+                        border-radius: 60px;
+                    }
+                }
+            }
+            button {
+                width: 50%;
+            }
+
+        }
+    }
 }

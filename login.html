@@ -19,7 +19,7 @@
 <body>
     <nav id="mynav" class="navbar navbar-expand-md navbar-light container-fluid">
         <div class="mylogo-area d-flex align-items-center">
-            <a class="navbar-brand p-0" href="/">
+            <a class="navbar-brand p-0" href="index.html">
                 <img src="./img/logo.png" class="logo" alt="LOGO">
             </a>
             <p class="m-0 ch logo-txt">暮沐美學</p>
@@ -32,7 +32,7 @@
         <div class="mycollapse collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav ms-auto d-flex align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">首頁</a>
+                    <a class="nav-link" href="index.html">首頁</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="course.html">創業教學</a>
@@ -47,7 +47,7 @@
                     <a class="nav-link" href="appointment.html">預約諮詢</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#faq">FAQ</a>
+                    <a class="nav-link" href="index.html#faq">FAQ</a>
                 </li>
                 <li class="nav-item">
                     <div class="myicon_area">
@@ -68,9 +68,20 @@
     </nav>
 
     <main>
-        <section id="login">
-            <div class="">
-
+        <section id="login_sec">
+            <div class="login d-flex justify-content-center align-items-center flex-column">
+                <form class="loginform d-flex flex-column">
+                    <div class="login_title mb-3">登入</div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">帳號</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-5">
+                        <label for="password" class="form-label">密碼</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="mx-auto py-2">登入</button>
+                </form>
             </div>
         </section>
     </main>
