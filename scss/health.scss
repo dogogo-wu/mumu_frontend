@@ -31,17 +31,23 @@ $btn_font:14px;
         justify-content: center;
     }
     .divider{
-        width: 80%;
+        width: 90%;
         height: 5px;
         border-radius: 5px;
         background-color: $color_primary;
+        @media (min-width: $medium) {
+            width: 80%;
+        }
     }
     .mytab_area{
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-top: 36px;
-        width: 80%;
+        width: 100%;
+        @media (min-width: $medium) {
+            width: 80%;
+        }
         li{
             margin: 0px 6px;
             @media (min-width: $medium) {
