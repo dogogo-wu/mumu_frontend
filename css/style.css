@@ -220,6 +220,10 @@ ul {
   background-color: #95AFD6;
 }
 
+.swiper .swiper-pagination-bullet-active {
+  background-color: #95AFD6;
+}
+
 #about {
   height: 100vh;
 }
