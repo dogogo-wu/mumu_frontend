@@ -1,0 +1,204 @@
+$color_primary : #EADCD9;
+$color_sec : #5A705C;
+$color_grey : #E7E7E7;
+$color_txt : #6A6A6A;
+
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$title_font:20px;
+$text_font:16px;
+$btn_font:14px;
+
+#course{
+    color: $color_txt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    p{
+        margin: 0px;
+    }
+    .mytitle{
+        font-size: $title_font;
+        font-weight: 600;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .divider{
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: $color_primary;
+        @media (min-width: $medium) {
+            width: 90%;
+        }
+    }
+	.card_sec{
+		margin-top: 36px;
+        width: 80%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.card {
+			overflow: hidden;
+			margin: 24px auto;
+			width: 280px;
+			height: 360px;
+			border-radius: 15px;
+			padding: 1.5rem;
+			background: white;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			transition: 0.4s ease-out;
+			box-shadow: 0px 4px 8px rgba(black, 0.5);
+			&:hover {
+				&:before {
+					opacity: 1;
+				}
+				.info {
+					transform: translateY(0px);
+					color: white;
+					ul {
+						opacity: 1;
+						color: white;
+					}
+					.card_btn{
+						opacity: 1;
+					}
+					
+				}
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 15px;
+				background: rgba(black, 0.6);
+				z-index: 2;
+				transition: 0.5s;
+				opacity: 0;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border-radius: 15px;
+			}
+			.info {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				position: relative;
+				z-index: 3;
+				color: $color_txt;
+				transform: translateY(45%);
+				transition: 0.5s;
+				.card_title {
+					margin: 0px;
+					font-size: $title_font;
+					font-weight: 600;
+				}
+				ul {
+					opacity: 0;
+					letter-spacing: 1px;
+					font-size: 15px;
+					margin-top: 20px;
+					li{
+						margin-left: 16px;
+					}
+					
+				}
+				.card_btn {
+					margin-top: 1rem;
+					opacity: 0;
+					padding: 0.6rem 1rem;
+					outline: none;
+					border: none;
+					border-radius: 8px;
+					background: $color_primary;
+					color: $color_txt;
+					font-weight: bold;
+					cursor: pointer;
+					transition: 0.4s ease;
+					&:hover {
+						background: #ecc7bf;
+					}
+				}
+
+			}
+		}
+	}
+
+	.btn_sec{
+		text-align: center;
+		margin-top: 36px;
+		.out_btn{
+			margin-top: 1rem;
+			padding: 0.6rem 1rem;
+			outline: none;
+			border: none;
+			border-radius: 8px;
+			background: $color_primary;
+			color: $color_txt;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.4s ease;
+			&:hover {
+				background: #ecc7bf;
+			}
+		}
+	}
+	.mytitle{
+		margin-top: 48px;
+	}
+
+	.swiper_area{
+		width: 90%;
+		margin-bottom: 48px;
+		@media (min-width: $medium) {
+			width: 80%;
+		}
+		.course_swiper {
+			width: 80%;
+			height: 400px;
+			margin: 20px auto;
+			@media (min-width: $medium) {
+				width: 100%;
+				height: 200px;
+			}
+			.swiper-slide img{
+				display: block;
+				height: 400px;
+				object-fit: cover;
+				object-position: center;
+				border-radius: 5px;
+				@media (min-width: $medium) {
+					height: 200px;
+				}
+			}
+
+		}
+		.swiper-pagination-bullet-active {
+			background-color: #95AFD6;
+			
+		}
+	}
+	
+	
+
+}
