@@ -4,7 +4,7 @@ $color_grey : #E7E7E7;
 $color_txt : #6A6A6A;
 
 $small: 576px;
-$midium: 768px;
+$medium: 768px;
 $large: 992px;
 $xl: 1200px;
 $xxl: 1400px;
@@ -27,74 +27,105 @@ ul{
 }
 
 #appointment{
-
+    // background-color: #c2fbc8;
     #title{
-        width: 100px;
+        // width: 100px;
         height: 100px;
         font-size: $title_font;
         color:$color_txt;
+        // background-color: aqua;
     }
     .divider{
-        width: 80%;
+        width: 100%;
         height: 5px;
         background-color: $color_primary;
-    }
-    #book{
-        @media (min-width: $small) {
-            width: 100%;
-        }
-        @media (min-width: $midium) {
+        border-radius: 5px;
+
+        @media (min-width: $medium){
             width: 90%;
         }
-        @media (min-width: $large) {
-            width: 80%;
-        }
+    }
+    #book{
+        // background-color: aqua;
         
         .appointment_notice{
             background-color: $color_grey;
             padding: 30px;
             border-radius: 10px;
+            width: 45%;
+            display: none;
 
-            @media (min-width: $small) {
-                width: 100%;
-            }
-            @media (min-width: $medium) {
-                width: 40%;
-            }
             @media (min-width: $large) {
-                width: 40%;
+                display: block;
             }
         }
-        .divider2{
+
+        .divider2{          
             width: 5px;
-            height: 450px;
+            height: unset;
             background-color: #6A6A6A;
             border-radius: 5px;
+            display: none;
+
+            @media (min-width: $large) {
+                display: block;
+            }
+
         }
 
         .appointment_info{
-            @media (min-width: $small) {
-                width: 100%;
-            }
-            @media (min-width: $medium) {
-                width: 40%;
-            }
+            width: 100%;
+
             @media (min-width: $large) {
-                width: 40%;
+                width: 45%;
             }
 
-            width: 400px;
-            height: 550px;
             background-color: #ffffff;
 
             .line_info{
 
-                width: 200px;
-                height: 200px;
-                background-color: #5A705C;
+                // width: 200px;
+                // height: 200px;
+                // background-color: #5A705C;
                 .line_title{
                     font-size: $title_font;
                 }
+            }
+            .appointment_notice2{
+                background-color: $color_grey;
+                padding: 30px;
+                border-radius: 10px;
+    
+                @media (min-width: $small) {
+                    width: 100%;
+                    display: block;
+
+                }
+                @media (min-width: $medium) {
+                    width: 100%;
+                    display: block;
+
+                }
+                @media (min-width: $large) {
+                    display: none;
+                }
+            }
+            .mumu_info{
+                margin:0 auto;
+
+                @media (min-width: $large) {
+                    width: 100%;
+                }
+
+            }
+            .map_info{
+                width: 100%;
+                height: 200px;
+
+                @media (min-width: $small) {
+                    height: 300px;
+                }
+
             }
         }
 
