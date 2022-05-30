@@ -146,7 +146,7 @@ ul{
 }
 
 
-.swiper {
+.mySwiper {
     height: calc(50vh - 80px);
     width: 100%;
     .swiper-slide img{
@@ -170,11 +170,18 @@ ul{
         .swiper-slide img{
             height: calc(100vh - 80px);
         }
+        .swiper-button-prev {
+            left: 80px;
+        }
+        .swiper-button-next {
+            right: 80px;
+        }
     }
     .swiper-pagination-bullet-active {
         background-color: #95AFD6;
         
     }
+
 }
 
 #about{

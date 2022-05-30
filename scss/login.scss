@@ -13,50 +13,13 @@ $title_font:20px;
 $text_font:16px;
 $btn_font:14px;
 
-#login_sec{
-    .login {
-        height: calc(100vh - 235px);
-        // background-color: rgb(229, 231, 235);
-        background-color: #fff;
-        color: $color_txt;
-        .loginform {
-            width: 400px;
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.2);
-            @media (max-width: 440px) {
-                width: 90%;
-            }
-            .login_title{
-                font-size: $title_font;
-                text-align: center;
-                font-weight: 600;
-            }
-            button {
-                color: $color_txt;
-                font-weight: 600;
-                background-color: $color_primary;
-                border-radius: 10px;
-                border-width: 0px;
-                width: 120px;
-                padding: 8px;
-                &:hover{
-                    background-color: #ecc7bf;
-                }
-            }
-
-        }
-    }
-
-
-
-}
-
 #login_sec2{
     .login {
-        height: 100vh;
+        height: calc(100vh - 260px);
         background-color: rgb(100, 100, 100);
+        @media (min-width: $medium) {
+            height: calc(100vh - 235px);
+        }
 
         .loginform {
             width: 400px;
