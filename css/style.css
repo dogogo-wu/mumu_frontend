@@ -8,12 +8,12 @@ a {
 }
 
 ul {
-  list-style: none;
   padding: 0;
   margin-left: 0px;
 }
 
 #mynav {
+  font-family: 'Noto Sans SC', cursive;
   background-color: #EADCD9;
   height: 60px;
   padding: 0;
