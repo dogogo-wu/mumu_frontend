@@ -33,7 +33,7 @@
 }
 
 #gallery .divider {
-  width: 90%;
+  width: 100%;
   height: 5px;
   border-radius: 5px;
   background-color: #EADCD9;
@@ -41,7 +41,7 @@
 
 @media (min-width: 768px) {
   #gallery .divider {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -58,12 +58,6 @@
           flex-direction: column;
   margin-top: 36px;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  #gallery .mytab_area {
-    width: 80%;
-  }
 }
 
 #gallery .mytab_area li {
