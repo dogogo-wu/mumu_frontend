@@ -213,17 +213,42 @@
   margin-bottom: 48px;
 }
 
-#course .swiper_area .swiper {
-  width: 100%;
-  height: 200px;
+@media (min-width: 768px) {
+  #course .swiper_area {
+    width: 80%;
+  }
+}
+
+#course .swiper_area .course_swiper {
+  width: 80%;
+  height: 400px;
   margin: 20px auto;
 }
 
-#course .swiper_area .swiper .swiper-slide img {
+@media (min-width: 768px) {
+  #course .swiper_area .course_swiper {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+#course .swiper_area .course_swiper .swiper-slide img {
   display: block;
-  width: 100%;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  #course .swiper_area .course_swiper .swiper-slide img {
+    height: 200px;
+  }
+}
+
+#course .swiper_area .swiper-pagination-bullet-active {
+  background-color: #95AFD6;
 }
 /*# sourceMappingURL=course.css.map */

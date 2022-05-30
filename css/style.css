@@ -172,12 +172,12 @@ ul {
   }
 }
 
-#banner .mySwiper {
+.mySwiper {
   height: calc(50vh - 80px);
   width: 100%;
 }
 
-#banner .mySwiper .swiper-slide img {
+.mySwiper .swiper-slide img {
   display: block;
   height: calc(50vh - 80px);
   width: 100%;
@@ -187,35 +187,35 @@ ul {
      object-position: center;
 }
 
-#banner .mySwiper .myswiper-btn {
+.mySwiper .myswiper-btn {
   color: #6A6A6A;
 }
 
 @media (min-width: 576px) {
-  #banner .mySwiper {
+  .mySwiper {
     height: calc(75vh - 80px);
   }
-  #banner .mySwiper .swiper-slide img {
+  .mySwiper .swiper-slide img {
     height: calc(75vh - 80px);
   }
 }
 
 @media (min-width: 768px) {
-  #banner .mySwiper {
+  .mySwiper {
     height: calc(100vh - 80px);
   }
-  #banner .mySwiper .swiper-slide img {
+  .mySwiper .swiper-slide img {
     height: calc(100vh - 80px);
   }
-  #banner .mySwiper .swiper-button-prev {
+  .mySwiper .swiper-button-prev {
     left: 80px;
   }
-  #banner .mySwiper .swiper-button-next {
+  .mySwiper .swiper-button-next {
     right: 80px;
   }
 }
 
-#banner .mySwiper .swiper-pagination-bullet-active {
+.mySwiper .swiper-pagination-bullet-active {
   background-color: #95AFD6;
 }
 

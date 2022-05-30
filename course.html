@@ -177,7 +177,7 @@
             課程花絮
         </div>
         <div class="swiper_area">
-            <div class="swiper mySwiper">
+            <div class="swiper course_swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
                     <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /></div>
@@ -185,8 +185,6 @@
                     <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-4.jpg" /></div>
                     <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-5.jpg" /></div>
                     <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-6.jpg" /></div>
-                    <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-7.jpg" /></div>
-                    <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-8.jpg" /></div>
                 </div>
                 <div class="myswiper-btn swiper-button-next"></div>
                 <div class="myswiper-btn swiper-button-prev"></div>
@@ -229,11 +227,11 @@
 
     <!-- Initialize Swiper -->
     <script>
-        
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 5,
+
+        var swiper = new Swiper(".course_swiper", {
+            slidesPerView: 1,
+            spaceBetweenSlides: 50,
             centeredSlides: true,
-            spaceBetween: 20,
             speed: 1200,
             loop: true,
             pagination: {
@@ -249,6 +247,25 @@
                 disableOnInteraction: false,
             },
             keyboard: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetweenSlides: 50,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetweenSlides: 20,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetweenSlides: 20,
+                },
+                1400: {
+                    slidesPerView: 5,
+                    spaceBetweenSlides: 20,
+                },
+            
+            }
         });
 
     </script>
