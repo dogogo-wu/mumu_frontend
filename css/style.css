@@ -13,6 +13,7 @@ ul {
 }
 
 #mynav {
+  font-family: 'Noto Sans SC', cursive;
   background-color: #EADCD9;
   height: 60px;
   padding: 0;
@@ -216,6 +217,10 @@ ul {
 }
 
 .mySwiper .swiper-pagination-bullet-active {
+  background-color: #95AFD6;
+}
+
+.swiper .swiper-pagination-bullet-active {
   background-color: #95AFD6;
 }
 
