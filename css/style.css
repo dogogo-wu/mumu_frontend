@@ -8,7 +8,6 @@ a {
 }
 
 ul {
-  list-style: none;
   padding: 0;
   margin-left: 0px;
 }
@@ -173,12 +172,12 @@ ul {
   }
 }
 
-.mySwiper {
+#banner .mySwiper {
   height: calc(50vh - 80px);
   width: 100%;
 }
 
-.mySwiper .swiper-slide img {
+#banner .mySwiper .swiper-slide img {
   display: block;
   height: calc(50vh - 80px);
   width: 100%;
@@ -188,35 +187,35 @@ ul {
      object-position: center;
 }
 
-.mySwiper .myswiper-btn {
+#banner .mySwiper .myswiper-btn {
   color: #6A6A6A;
 }
 
 @media (min-width: 576px) {
-  .mySwiper {
+  #banner .mySwiper {
     height: calc(75vh - 80px);
   }
-  .mySwiper .swiper-slide img {
+  #banner .mySwiper .swiper-slide img {
     height: calc(75vh - 80px);
   }
 }
 
 @media (min-width: 768px) {
-  .mySwiper {
+  #banner .mySwiper {
     height: calc(100vh - 80px);
   }
-  .mySwiper .swiper-slide img {
+  #banner .mySwiper .swiper-slide img {
     height: calc(100vh - 80px);
   }
-  .mySwiper .swiper-button-prev {
+  #banner .mySwiper .swiper-button-prev {
     left: 80px;
   }
-  .mySwiper .swiper-button-next {
+  #banner .mySwiper .swiper-button-next {
     right: 80px;
   }
 }
 
-.mySwiper .swiper-pagination-bullet-active {
+#banner .mySwiper .swiper-pagination-bullet-active {
   background-color: #95AFD6;
 }
 

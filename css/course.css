@@ -1,0 +1,229 @@
+#course {
+  color: #6A6A6A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh;
+}
+
+#course p {
+  margin: 0px;
+}
+
+#course .mytitle {
+  font-size: 20px;
+  font-weight: 600;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#course .divider {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #EADCD9;
+}
+
+@media (min-width: 768px) {
+  #course .divider {
+    width: 90%;
+  }
+}
+
+#course .card_sec {
+  margin-top: 36px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#course .card_sec .card {
+  overflow: hidden;
+  margin: 24px auto;
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#course .card_sec .card:hover:before {
+  opacity: 1;
+}
+
+#course .card_sec .card:hover .info {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  color: white;
+}
+
+#course .card_sec .card:hover .info ul {
+  opacity: 1;
+  color: white;
+}
+
+#course .card_sec .card:hover .info .card_btn {
+  opacity: 1;
+}
+
+#course .card_sec .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#course .card_sec .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+
+#course .card_sec .card .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 3;
+  color: #6A6A6A;
+  -webkit-transform: translateY(45%);
+          transform: translateY(45%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#course .card_sec .card .info .card_title {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#course .card_sec .card .info ul {
+  opacity: 0;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+#course .card_sec .card .info ul li {
+  margin-left: 16px;
+}
+
+#course .card_sec .card .info .card_btn {
+  margin-top: 1rem;
+  opacity: 0;
+  padding: 0.6rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: #EADCD9;
+  color: #6A6A6A;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#course .card_sec .card .info .card_btn:hover {
+  background: #ecc7bf;
+}
+
+#course .btn_sec {
+  text-align: center;
+  margin-top: 36px;
+}
+
+#course .btn_sec .out_btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: #EADCD9;
+  color: #6A6A6A;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#course .btn_sec .out_btn:hover {
+  background: #ecc7bf;
+}
+
+#course .mytitle {
+  margin-top: 48px;
+}
+
+#course .swiper_area {
+  width: 90%;
+  margin-bottom: 48px;
+}
+
+#course .swiper_area .swiper {
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
+}
+
+#course .swiper_area .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=course.css.map */
