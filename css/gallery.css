@@ -80,7 +80,7 @@
   color: #6A6A6A;
   font-weight: 600;
   background-color: #EADCD9;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
   width: 90px;
@@ -104,7 +104,7 @@
 }
 
 #gallery .mytab_area .tab_divider {
-  margin-top: 6px;
+  margin-top: 2px;
   width: 300px;
   height: 2px;
   border-radius: 2px;
