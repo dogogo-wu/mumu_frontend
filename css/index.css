@@ -75,6 +75,8 @@ h2 {
 
 #about .about .content-2 {
   padding-top: 100px;
+  margin-left: 100px;
+  margin-right: 290px;
 }
 
 #about .about .content-2 :nth-child(2) {
@@ -93,7 +95,8 @@ h2 {
     display: block;
   }
   #about .about .content-2 {
-    padding-top: 0px;
+    padding-top: 20px;
+    margin: 0 10px 0 10px;
   }
 }
 
@@ -185,6 +188,10 @@ h2 {
     margin-left: 20px;
     margin-right: 20px;
   }
+  #service .swiper-slide img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 #faq {
@@ -247,7 +254,6 @@ h2 {
 @media (max-width: 768px) {
   #faq .faq {
     width: 100%;
-    height: 60%;
   }
 }
 /*# sourceMappingURL=index.css.map */
