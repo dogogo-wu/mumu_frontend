@@ -52,7 +52,17 @@ ul{
                 font-weight: 500;         
 
             }
-            
+            button{
+                background-color:#EADCD9;
+                border-style:none;
+                
+                &:hover{
+                    background-color: #5A705C;
+                    color: white;
+                    box-shadow:5px 5px 2px #EADCD9;
+                    padding: 15px;
+                }
+            }
         }
 
         .divider2{          

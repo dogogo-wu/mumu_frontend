@@ -97,6 +97,7 @@
                         padding: 12px 0px;
                     }
                 }
+                //術前準備 術後準備
                 .left_area, .right_area{
                     background-color: $color_grey;
                     border-radius: 20px;
@@ -104,12 +105,18 @@
                     padding: 10px;
                     flex-basis: 100%;
                     font-weight: 500;
+                    &:hover{
+                        background-color: #5A705C;
+                        color: white;
+                    }
                     .my_subtitle{
                         font-size: $title_font;
                         padding-bottom: 16px;
                         text-align: center;
                     }
                 }
+                
+                // 中間分隔線
                 .divider2{
                     width: 0px;
                     margin: 10px 0px;
