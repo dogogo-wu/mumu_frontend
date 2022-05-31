@@ -178,11 +178,6 @@
   font-weight: 500;
 }
 
-#health .mytab_area .outer_tab_content .tab_content_area .left_area:hover, #health .mytab_area .outer_tab_content .tab_content_area .right_area:hover {
-  background-color: #5A705C;
-  color: white;
-}
-
 #health .mytab_area .outer_tab_content .tab_content_area .left_area .my_subtitle, #health .mytab_area .outer_tab_content .tab_content_area .right_area .my_subtitle {
   font-size: 20px;
   padding-bottom: 16px;
