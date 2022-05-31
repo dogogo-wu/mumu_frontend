@@ -202,7 +202,8 @@
 }
 
 #course .btn_sec .out_btn:hover {
-  background: #ecc7bf;
+  color: white;
+  background-color: #5A705C;
 }
 
 #course .mytitle {
