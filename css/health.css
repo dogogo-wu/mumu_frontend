@@ -77,12 +77,19 @@
   border-radius: 10px 10px 0px 0px;
   -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
-  width: 90px;
-  padding: 8px;
+  width: 70px;
+  padding: 8px 2px;
 }
 
 #health .mytab_area li button:hover {
   background-color: #ecc7bf;
+}
+
+@media (min-width: 360px) {
+  #health .mytab_area li button {
+    width: 90px;
+    padding: 8px;
+  }
 }
 
 @media (min-width: 768px) {
