@@ -98,6 +98,10 @@ h2 {
     padding-top: 20px;
     margin: 0 10px 0 10px;
   }
+  #about .about .swiper-slide img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 #service .swiper {
