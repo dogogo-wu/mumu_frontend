@@ -19,7 +19,7 @@
 
 #health .mytitle {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +72,7 @@
 
 #health .mytab_area li button {
   color: #6A6A6A;
-  font-weight: 600;
+  font-weight: 500;
   background-color: #EADCD9;
   border-radius: 10px 10px 0px 0px;
   -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
@@ -131,7 +131,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 16px;
 }
 
@@ -159,6 +159,7 @@
 
 #health .mytab_area .outer_tab_content .tab_content_area ul {
   list-style: unset;
+  font-weight: 400;
 }
 
 #health .mytab_area .outer_tab_content .tab_content_area ul li {
@@ -174,7 +175,7 @@
   padding: 10px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #health .mytab_area .outer_tab_content .tab_content_area .left_area .my_subtitle, #health .mytab_area .outer_tab_content .tab_content_area .right_area .my_subtitle {

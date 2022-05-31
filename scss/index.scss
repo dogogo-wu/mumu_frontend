@@ -4,7 +4,7 @@ $color_grey : #E7E7E7;
 $color_txt : #6A6A6A;
 
 $small: 576px;
-$midium: 768px;
+$medium: 768px;
 $large: 992px;
 $xl: 1200px;
 $xxl: 1400px;
@@ -13,11 +13,9 @@ h2{
     font-size: 24px;
 }
 .title{
-    font-family: 'Noto Sans SC', cursive;
     color: #6A6A6A
 }
 .content {
-    font-family: 'Noto Sans SC', cursive;
     font-size: 16px;
     color: #5A705C;
 }
@@ -73,7 +71,7 @@ h2{
         .content-2 :nth-child(2){
             animation-delay: 1s;
         }
-        @media (max-width: $midium) {
+        @media (max-width: $medium) {
             .about{
                 margin-bottom: 100px;
             }
@@ -122,7 +120,6 @@ h2{
     .button{
         margin-top: 50px;
         button{
-            font-family: 'Noto Sans SC', cursive;
             color: #6A6A6A;
             width: 126px;
             height: 52px;
@@ -139,7 +136,7 @@ h2{
         color: white;
         background-color:#5A705C;
     }
-    @media (max-width: $midium) {
+    @media (max-width: $medium) {
         .service{
             display: flex;
         }
@@ -182,12 +179,13 @@ h2{
             display: flex;
             justify-content: center;
             align-self: center;
+            
             h2{
                 margin: 16px;
+                font-weight: 400;
             }
         }
         .accordion{
-            font-family: 'Noto Sans SC', cursive;
             margin: 40px;
             .accordion-item{
                 .accordion-header{
@@ -213,7 +211,7 @@ h2{
                 }
             }
         }
-        @media (max-width: $midium) {
+        @media (max-width: $medium) {
             width: 100%;
         }    
     }

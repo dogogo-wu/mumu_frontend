@@ -3,12 +3,10 @@ h2 {
 }
 
 .title {
-  font-family: 'Noto Sans SC', cursive;
   color: #6A6A6A;
 }
 
 .content {
-  font-family: 'Noto Sans SC', cursive;
   font-size: 16px;
   color: #5A705C;
 }
@@ -147,7 +145,6 @@ h2 {
 }
 
 #service .button button {
-  font-family: 'Noto Sans SC', cursive;
   color: #6A6A6A;
   width: 126px;
   height: 52px;
@@ -221,10 +218,10 @@ h2 {
 
 #faq .faq .title h2 {
   margin: 16px;
+  font-weight: 400;
 }
 
 #faq .faq .accordion {
-  font-family: 'Noto Sans SC', cursive;
   margin: 40px;
 }
 

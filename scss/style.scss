@@ -11,6 +11,7 @@ $xxl: 1400px;
 
 *{
     transition: 0.5s;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 a {
     text-decoration: none;
@@ -37,7 +38,7 @@ ul{
     .mylogo-area{
         color: $color_txt;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 500;
         padding-left: 0px;
         height: 60px;
         @media (min-width: $large) {
@@ -69,11 +70,16 @@ ul{
         .en{
             font-weight: 300;
             font-style: italic;
+            letter-spacing: 0.5px;
+            padding-left: 2px;
+            @media (min-width: $medium) {
+                padding-left: 6px;
+            }
         }
     }
     
     ul{
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         padding-right: 0px;
         min-height: 100vh;
@@ -203,6 +209,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-weight: 300;
     @media (min-width: $medium) {
         height: 155px;
     }
@@ -234,6 +241,9 @@ ul{
             @media (min-width: $medium) {
                 margin-right: 64px;
             }
+            em{
+                letter-spacing: 0.5px;
+            }
         }
         .logo_foot{
             height: 60px;
@@ -247,6 +257,7 @@ ul{
         flex-direction: column;
         align-items: center;
         margin-top: 16px;
+        letter-spacing: 0.5px;
         @media (min-width: $medium) {
             flex-direction: row;
             margin-top: 0px;

@@ -1,6 +1,7 @@
 * {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 a {
@@ -33,7 +34,7 @@ ul {
 #mynav .mylogo-area {
   color: #6A6A6A;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   padding-left: 0px;
   height: 60px;
 }
@@ -78,10 +79,18 @@ ul {
 #mynav .mylogo-area .en {
   font-weight: 300;
   font-style: italic;
+  letter-spacing: 0.5px;
+  padding-left: 2px;
+}
+
+@media (min-width: 768px) {
+  #mynav .mylogo-area .en {
+    padding-left: 6px;
+  }
 }
 
 #mynav ul {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   padding-right: 0px;
   min-height: 100vh;
@@ -220,10 +229,6 @@ ul {
   background-color: #95AFD6;
 }
 
-.swiper .swiper-pagination-bullet-active {
-  background-color: #95AFD6;
-}
-
 #about {
   height: 100vh;
 }
@@ -249,6 +254,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -322,6 +328,10 @@ ul {
   }
 }
 
+#myfooter .footer_info .left_info em {
+  letter-spacing: 0.5px;
+}
+
 #myfooter .footer_info .logo_foot {
   height: 60px;
 }
@@ -344,6 +354,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 16px;
+  letter-spacing: 0.5px;
 }
 
 @media (min-width: 768px) {
