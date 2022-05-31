@@ -1,3 +1,7 @@
+#login_sec2 {
+  font-weight: 400;
+}
+
 #login_sec2 .login {
   height: calc(100vh - 260px);
   background-color: #646464;

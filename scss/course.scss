@@ -24,7 +24,7 @@ $btn_font:14px;
     }
     .mytitle{
         font-size: $title_font;
-        font-weight: 600;
+        font-weight: 500;
         height: 100px;
         display: flex;
         align-items: center;
@@ -111,13 +111,14 @@ $btn_font:14px;
 				.card_title {
 					margin: 0px;
 					font-size: $title_font;
-					font-weight: 600;
+					font-weight: 500;
 				}
 				ul {
 					opacity: 0;
 					letter-spacing: 1px;
 					font-size: 15px;
 					margin-top: 20px;
+					font-weight: 400;
 					li{
 						margin-left: 16px;
 					}
@@ -132,7 +133,7 @@ $btn_font:14px;
 					border-radius: 8px;
 					background: $color_primary;
 					color: $color_txt;
-					font-weight: bold;
+					font-weight: 500;
 					cursor: pointer;
 					transition: 0.4s ease;
 					&:hover {
@@ -155,7 +156,7 @@ $btn_font:14px;
 			border-radius: 8px;
 			background: $color_primary;
 			color: $color_txt;
-			font-weight: bold;
+			font-weight: 500;
 			cursor: pointer;
 			transition: 0.4s ease;
 			&:hover {

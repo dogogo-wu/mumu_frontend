@@ -19,7 +19,7 @@
 
 #course .mytitle {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,7 +148,7 @@
 #course .card_sec .card .info .card_title {
   margin: 0px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #course .card_sec .card .info ul {
@@ -156,6 +156,7 @@
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 20px;
+  font-weight: 400;
 }
 
 #course .card_sec .card .info ul li {
@@ -171,7 +172,7 @@
   border-radius: 8px;
   background: #EADCD9;
   color: #6A6A6A;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
@@ -194,7 +195,7 @@
   border-radius: 8px;
   background: #EADCD9;
   color: #6A6A6A;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
