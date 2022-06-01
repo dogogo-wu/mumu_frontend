@@ -30,16 +30,20 @@
         rel="stylesheet">
 
     <style>
-        .swiper-wrapper img {
+        .swiper-slide img {
             width: 80%;
             opacity: 0.5;
+            height: 100%;
         }
 
         @media(max-width:768px) {
-            .swiper-wrapper img {
+            .swiper-slide img {
                 width: 400px;
+                height: 100%;
             }
         }
+
+
 
         #popDiv,
         #popDiv1,
@@ -50,28 +54,14 @@
             display: none;
             background-color: rgb(255, 255, 255);
             z-index: 11;
-            width: 800px;
-            height: 600px;
+            width: 100%;
+            height: 650px;
             position: fixed;
             top: 50px;
             right: 0;
             left: 0;
             bottom: 0;
             margin: auto;
-        }
-
-
-
-        /* 關閉按鈕樣式 */
-        #popDiv .close a,
-        #popDiv1 .close a,
-        #popDiv2 .close a,
-        #popDiv3 .close a,
-        #popDiv4 .close a,
-        #popDiv5 .close a {
-            text-decoration: none;
-            color: rgb(42, 41, 41);
-            font-size: 25px;
         }
 
 
@@ -87,16 +77,16 @@
             background-color: rgb(255, 255, 255);
         }
 
-        #popDiv p,
-        #popDiv1 p,
-        #popDiv2 p,
-        #popDiv3 p,
-        #popDiv4 p,
-        #popDiv5 p {
-            text-align: center;
+        /* 關閉按鈕樣式 */
+        #popDiv .close a,
+        #popDiv1 .close a,
+        #popDiv2 .close a,
+        #popDiv3 .close a,
+        #popDiv4 .close a,
+        #popDiv5 .close a {
+            text-decoration: none;
+            color: rgb(42, 41, 41);
             font-size: 25px;
-            font-weight: bold;
-            color: aliceblue;
         }
 
         .popLayer img {
@@ -104,16 +94,72 @@
             height: 350px;
         }
 
-        #popDiv img,
-        #popDiv1 img,
-        #popDiv2 img,
-        #popDiv3 img,
-        #popDiv4 img,
-        #popDiv5 img {
-            width: 400px;
-            height: 450px;
+        .course_swiper_1 {
+            width: 100%;
+
+        }
+
+        .course_swiper_1  .swiper-slide img {
+            width: 500px;
+            height: 100%;
             border-radius: 5%;
             opacity: 0.7;
+        }
+
+        .course_swiper {
+            width: 80%;
+            height: 400px;
+        }
+
+    
+        .swiper_area {
+            z-index: 10;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        @media(max-width:768px) {
+
+            .course_swiper .swiper-slide {
+                margin: 10px;
+                width: 80%;
+                height: 80%;
+            }
+
+      
+            #popDiv .swiper-slide,
+            #popDiv1 .swiper-slide,
+            #popDiv2 .swiper-slide,
+            #popDiv3 .swiper-slide,
+            #popDiv4 .swiper-slide,
+            #popDiv5 .swiper-slide {
+                width: 100%;
+                height: 90%;
+            }
+
+            .course_swiper_1 {
+                width: 100%;
+                height: 100%;
+            }
+
+            .course_swiper_1 .swiper-wrapper .swiper-slide img {
+                position: relative;
+                width: 100%;
+                height: 500px;
+                border-radius: 5%;
+                opacity: 0.7;
+            }
+
+            .course_swiper_1 .swiper-slide {
+                display: flex;
+                justify-content: center;
+            }
+
+
         }
     </style>
 
@@ -280,162 +326,161 @@
                     <div class="swiper-slide ms-2"><img src="./img/course img/課程花絮_5.jpg" onclick="popDiv4();" /></div>
                     <div class="swiper-slide ms-2"><img src="./img/course img/課程花絮_6.jpg" onclick="popDiv5();" /></div>
                 </div>
-
-                <div id="popDiv">
-                    <div class="close">
-                        <a href="javascript:void(0)" onclick="closePop()"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <div class="row" p-5>
-                        <div class="col-6 p-5">
-                            <img src="./img/course img/課程花絮_1.jpg" alt="">
-                        </div>
-                        <div class="col-6 mt-4 p-5">
-                            <h1 class="mb-4"> 霧眉課程</h1>
-                            <h5>香霧雲鬟溼，清輝玉臂寒。
-
-                                一日不見，如三月兮。
-
-                                本是同根生，相煎何太急？
-
-                                不慼慼於貧賤，不汲汲於富貴。
-
-                                要看銀山拍天浪，開窗放入大江來。
-
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popDiv1">
-                    <div class="close">
-                        <a href="javascript:void(0)" onclick="closePop1()"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <div class="row" p-5>
-                        <div class="col-6 p-5">
-                            <img src="./img/course img/課程花絮_2.jpg" alt="">
-                        </div>
-                        <div class="col-6 mt-4 p-5">
-                            <h1 class="mb-4"> 半永久全科班課程</h1>
-                            <h5>香霧雲鬟溼，清輝玉臂寒。
-
-                                一日不見，如三月兮。
-
-                                本是同根生，相煎何太急？
-
-                                不慼慼於貧賤，不汲汲於富貴。
-
-                                要看銀山拍天浪，開窗放入大江來。
-
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popDiv2">
-                    <div class="close">
-                        <a href="javascript:void(0)" onclick="closePop2()"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <div class="row" p-5>
-                        <div class="col-6 p-5">
-                            <img src="./img/course img/課程花絮_3.jpg" alt="">
-                        </div>
-                        <div class="col-6 mt-4 p-5">
-                            <h1 class="mb-4"> 睫毛捲翹管理課程</h1>
-                            <h5>香霧雲鬟溼，清輝玉臂寒。
-
-                                一日不見，如三月兮。
-
-                                本是同根生，相煎何太急？
-
-                                不慼慼於貧賤，不汲汲於富貴。
-
-                                要看銀山拍天浪，開窗放入大江來。
-
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popDiv3">
-                    <div class="close">
-                        <a href="javascript:void(0)" onclick="closePop3()"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <div class="row" p-5>
-                        <div class="col-6 p-5">
-                            <img src="./img/course img/課程花絮_4.jpg" alt="">
-                        </div>
-                        <div class="col-6 mt-4 p-5">
-                            <h1 class="mb-4"> 皮膚管理課程</h1>
-                            <h5>香霧雲鬟溼，清輝玉臂寒。
-
-                                一日不見，如三月兮。
-
-                                本是同根生，相煎何太急？
-
-                                不慼慼於貧賤，不汲汲於富貴。
-
-                                要看銀山拍天浪，開窗放入大江來。
-
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="popDiv4">
-                    <div class="close">
-                        <a href="javascript:void(0)" onclick="closePop4()"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <div class="row" p-5>
-                        <div class="col-6 p-5">
-                            <img src="./img/course img/課程花絮_5.jpg" alt="">
-                        </div>
-                        <div class="col-6 mt-4 p-5">
-                            <h1 class="mb-4"> 3D、6D睫毛課程</h1>
-                            <h5>香霧雲鬟溼，清輝玉臂寒。
-
-                                一日不見，如三月兮。
-
-                                本是同根生，相煎何太急？
-
-                                不慼慼於貧賤，不汲汲於富貴。
-
-                                要看銀山拍天浪，開窗放入大江來。
-
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div id="popDiv5">
-                    <div class="close">
-                        <a href="javascript:void(0)" onclick="closePop5()"><i class="fa-solid fa-xmark"></i></a>
-                    </div>
-                    <div class="row" p-5>
-                        <div class="col-6 p-5">
-                            <img src="./img/course img/課程花絮_6.jpg" alt="">
-                        </div>
-                        <div class="col-6 mt-4 p-5">
-                            <h1 class="mb-4"> 乙、丙級考照課程</h1>
-                            <h5>香霧雲鬟溼，清輝玉臂寒。
-
-                                一日不見，如三月兮。
-
-                                本是同根生，相煎何太急？
-
-                                不慼慼於貧賤，不汲汲於富貴。
-
-                                要看銀山拍天浪，開窗放入大江來。
-
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="myswiper-btn swiper-button-next"></div>
-                <div class="myswiper-btn swiper-button-prev"></div>
+                <div class="myswiper-btn_1 swiper-button-next"></div>
+                <div class="myswiper-btn_1 swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <div id="popDiv">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div id="popDiv1">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop1()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div id="popDiv2">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop2()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div id="popDiv3">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop3()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="swiper mySwiper course_swiper_1 d-flex justify-content-center">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div id="popDiv4">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop4()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+
+
+            <div id="popDiv5">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop5()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
 
@@ -513,6 +558,23 @@
                 },
 
             }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".course_swiper_1", {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 50,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
     </script>
 
