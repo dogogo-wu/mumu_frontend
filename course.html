@@ -185,18 +185,181 @@
             課程花絮
         </div>
         <div class="swiper_area">
-            <div class="swiper course_swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./img/class-1.jpg" /></div>
-                    <div class="swiper-slide"><img src="./img/class-2.jpg" /></div>
-                    <div class="swiper-slide"><img src="./img/class-3.jpg" /></div>
-                    <div class="swiper-slide"><img src="./img/class-4.jpg" /></div>
-                    <div class="swiper-slide"><img src="./img/class-5.jpg" /></div>
-                    <div class="swiper-slide"><img src="./img/class-6.jpg" /></div>
+            <!-- 頁面swiper -->
+            <div class="swiper mySwiper course_swiper">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide ms-2"><img src="./img/course img/課程花絮_1.jpg" onclick="popDiv();" /></div>
+                    <div class="swiper-slide ms-2"><img src="./img/course img/課程花絮_2.jpg" onclick="popDiv1();" /></div>
+                    <div class="swiper-slide ms-2"><img src="./img/course img/課程花絮_3.jpg" onclick="popDiv2();" /></div>
+                    <div class="swiper-slide ms-2"><img src="./img/course img/課程花絮_4.jpg" onclick="popDiv3();" /></div>
+                    <div class="swiper-slide ms-2"><img src="./img/course img/課程花絮_5.jpg" onclick="popDiv4();" /></div>
+                    <div class="swiper-slide ms-2"><img src="./img/course img/課程花絮_6.jpg" onclick="popDiv5();" /></div>
                 </div>
-                <div class="myswiper-btn swiper-button-next"></div>
-                <div class="myswiper-btn swiper-button-prev"></div>
+                <div class="myswiper-btn_1 swiper-button-next"></div>
+                <div class="myswiper-btn_1 swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- 彈跳視窗div -->
+            <div id="popDiv">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <!--彈跳視窗div的swiper  -->
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- 彈跳視窗div -->
+            <div id="popDiv1">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop1()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <!--彈跳視窗div的swiper  -->
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- 彈跳視窗div -->
+            <div id="popDiv2">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop2()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <!--彈跳視窗div的swiper  -->
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- 彈跳視窗div -->
+            <div id="popDiv3">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop3()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <!--彈跳視窗div的swiper  -->
+                <div class="swiper mySwiper course_swiper_1 d-flex justify-content-center">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- 彈跳視窗div -->
+            <div id="popDiv4">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop4()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <!--彈跳視窗div的swiper  -->
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- 彈跳視窗div -->
+            <div id="popDiv5">
+                <div class="close">
+                    <a href="javascript:void(0)" onclick="closePop5()"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <!--彈跳視窗div的swiper  -->
+                <div class="swiper mySwiper course_swiper_1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_2.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_3.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_4.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_5.jpg" />
+                        </div>
+                        <div class="swiper-slide "><img src="./img/course img/課程花絮_6.jpg" />
+                        </div>
+                    </div>
+                    <div class="myswiper-btn_1 swiper-button-next"></div>
+                    <div class="myswiper-btn_1 swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
 
@@ -232,8 +395,12 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
-    <!-- Initialize Swiper -->
+    <!-- Initialize 頁面Swiper -->
     <script>
 
         var swiper = new Swiper(".course_swiper", {
@@ -275,11 +442,151 @@
 
             }
         });
-
     </script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+
+    <!--彈跳視窗div的swiper  -->
+    <script>
+        var swiper = new Swiper(".course_swiper_1", {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 50,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!--彈跳視窗div的開關  -->
+    <script type="text/javascript">
+        function popDiv() {
+            // 獲取div元素
+            var popBox = document.getElementById("popDiv");
+            var popLayer = document.getElementById("popLayer");
+
+            // 控制兩個div的顯示與隱藏
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        }
+
+        function closePop() {
+            // 獲取彈出視窗元素
+            let popDiv = document.getElementById("popDiv");
+
+            popDiv.style.display = "none";
+        }
+    </script>
+
+    <!--彈跳視窗div的開關  -->
+    <script type="text/javascript">
+        function popDiv1() {
+            // 獲取div元素
+            var popBox = document.getElementById("popDiv1");
+            var popLayer = document.getElementById("popLayer");
+
+            // 控制兩個div的顯示與隱藏
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        }
+
+        function closePop1() {
+            // 獲取彈出視窗元素
+            let popDiv = document.getElementById("popDiv1");
+
+            popDiv.style.display = "none";
+        }
+    </script>
+
+
+    <!--彈跳視窗div的開關  -->
+    <script type="text/javascript">
+        function popDiv2() {
+            // 獲取div元素
+            var popBox = document.getElementById("popDiv2");
+            var popLayer = document.getElementById("popLayer");
+
+            // 控制兩個div的顯示與隱藏
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        }
+
+        function closePop2() {
+            // 獲取彈出視窗元素
+            let popDiv = document.getElementById("popDiv2");
+
+            popDiv.style.display = "none";
+        }
+    </script>
+
+    <!--彈跳視窗div的開關  -->
+    <script type="text/javascript">
+        function popDiv3() {
+            // 獲取div元素
+            var popBox = document.getElementById("popDiv3");
+            var popLayer = document.getElementById("popLayer");
+
+            // 控制兩個div的顯示與隱藏
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        }
+
+        function closePop3() {
+            // 獲取彈出視窗元素
+            let popDiv = document.getElementById("popDiv3");
+
+            popDiv.style.display = "none";
+        }
+    </script>
+
+    <!--彈跳視窗div的開關  -->
+    <script type="text/javascript">
+        function popDiv4() {
+            // 獲取div元素
+            var popBox = document.getElementById("popDiv4");
+            var popLayer = document.getElementById("popLayer");
+
+            // 控制兩個div的顯示與隱藏
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        }
+
+        function closePop4() {
+            // 獲取彈出視窗元素
+            let popDiv = document.getElementById("popDiv4");
+
+            popDiv.style.display = "none";
+        }
+    </script>
+
+    <!--彈跳視窗div的開關  -->
+    <script type="text/javascript">
+        function popDiv5() {
+            // 獲取div元素
+            var popBox = document.getElementById("popDiv5");
+            var popLayer = document.getElementById("popLayer");
+
+            // 控制兩個div的顯示與隱藏
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        }
+
+        function closePop5() {
+            // 獲取彈出視窗元素
+            let popDiv = document.getElementById("popDiv5");
+
+            popDiv.style.display = "none";
+        }
+    </script>
+
+
+
+
+
 </body>
 
 </html>
