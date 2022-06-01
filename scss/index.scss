@@ -211,6 +211,10 @@ h2{
         }
         @media (max-width: $medium) {
             width: 100%;
-        }    
+            
+        }  
+        @media (max-width: $large) {
+            height: 75vh;
+        }
     }
 }

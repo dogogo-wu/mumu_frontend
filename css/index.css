@@ -260,4 +260,10 @@ h2 {
     width: 100%;
   }
 }
+
+@media (max-width: 992px) {
+  #faq .faq {
+    height: 75vh;
+  }
+}
 /*# sourceMappingURL=index.css.map */
