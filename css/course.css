@@ -225,6 +225,12 @@
   width: 80%;
   height: 400px;
   margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -236,14 +242,20 @@
 
 @media (max-width: 768px) {
   #course .swiper_area .course_swiper .swiper-slide {
-    margin: 10px;
-    width: 80%;
-    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-left: 20px;
   }
 }
 
 #course .swiper_area .course_swiper .swiper-slide img {
-  width: 80%;
+  width: 100%;
   opacity: 0.5;
   display: block;
   height: 100%;
@@ -262,8 +274,8 @@
 
 @media (max-width: 768px) {
   #course .swiper_area .course_swiper .swiper-slide img {
-    width: 400px;
-    height: 100%;
+    width: 100%;
+    height: 400px;
   }
 }
 
@@ -384,9 +396,10 @@
   #course .swiper_area #popDiv3 .course_swiper_1 .swiper-slide img,
   #course .swiper_area #popDiv4 .course_swiper_1 .swiper-slide img,
   #course .swiper_area #popDiv5 .course_swiper_1 .swiper-slide img {
+    top: 50px;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 550px;
     border-radius: 5%;
     opacity: 0.7;
   }

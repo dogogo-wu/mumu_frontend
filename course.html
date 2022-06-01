@@ -29,140 +29,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <style>
-        .swiper-slide img {
-            width: 80%;
-            opacity: 0.5;
-            height: 100%;
-        }
-
-        @media(max-width:768px) {
-            .swiper-slide img {
-                width: 400px;
-                height: 100%;
-            }
-        }
-
-
-
-        #popDiv,
-        #popDiv1,
-        #popDiv2,
-        #popDiv3,
-        #popDiv4,
-        #popDiv5 {
-            display: none;
-            background-color: rgb(255, 255, 255);
-            z-index: 11;
-            width: 100%;
-            height: 650px;
-            position: fixed;
-            top: 50px;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            margin: auto;
-        }
-
-
-        /* 彈出介面的關閉按鈕 */
-        #popDiv .close,
-        #popDiv1 .close,
-        #popDiv2 .close,
-        #popDiv3 .close,
-        #popDiv4 .close,
-        #popDiv5 .close {
-            text-align: right;
-            margin-right: 5px;
-            background-color: rgb(255, 255, 255);
-        }
-
-        /* 關閉按鈕樣式 */
-        #popDiv .close a,
-        #popDiv1 .close a,
-        #popDiv2 .close a,
-        #popDiv3 .close a,
-        #popDiv4 .close a,
-        #popDiv5 .close a {
-            text-decoration: none;
-            color: rgb(42, 41, 41);
-            font-size: 25px;
-        }
-
-        .popLayer img {
-            width: 300px;
-            height: 350px;
-        }
-
-        .course_swiper_1 {
-            width: 100%;
-
-        }
-
-        .course_swiper_1  .swiper-slide img {
-            width: 500px;
-            height: 100%;
-            border-radius: 5%;
-            opacity: 0.7;
-        }
-
-        .course_swiper {
-            width: 80%;
-            height: 400px;
-        }
-
-    
-        .swiper_area {
-            z-index: 10;
-        }
-
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-        }
-
-
-        @media(max-width:768px) {
-
-            .course_swiper .swiper-slide {
-                margin: 10px;
-                width: 80%;
-                height: 80%;
-            }
-
-      
-            #popDiv .swiper-slide,
-            #popDiv1 .swiper-slide,
-            #popDiv2 .swiper-slide,
-            #popDiv3 .swiper-slide,
-            #popDiv4 .swiper-slide,
-            #popDiv5 .swiper-slide {
-                width: 100%;
-                height: 90%;
-            }
-
-            .course_swiper_1 {
-                width: 100%;
-                height: 100%;
-            }
-
-            .course_swiper_1 .swiper-wrapper .swiper-slide img {
-                position: relative;
-                width: 100%;
-                height: 500px;
-                border-radius: 5%;
-                opacity: 0.7;
-            }
-
-            .course_swiper_1 .swiper-slide {
-                display: flex;
-                justify-content: center;
-            }
-
-
-        }
-    </style>
-
 </head>
 
 <body>
@@ -317,6 +183,8 @@
             課程花絮
         </div>
         <div class="swiper_area">
+
+            <!-- 頁面swiper -->
             <div class="swiper mySwiper course_swiper">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide ms-2"><img src="./img/course img/課程花絮_1.jpg" onclick="popDiv();" /></div>
@@ -331,10 +199,12 @@
                 <div class="swiper-pagination"></div>
             </div>
 
+            <!-- 彈跳視窗div -->
             <div id="popDiv">
                 <div class="close">
                     <a href="javascript:void(0)" onclick="closePop()"><i class="fa-solid fa-xmark"></i></a>
                 </div>
+                <!--彈跳視窗div的swiper  -->
                 <div class="swiper mySwiper course_swiper_1">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
@@ -356,10 +226,12 @@
                 </div>
             </div>
 
+            <!-- 彈跳視窗div -->
             <div id="popDiv1">
                 <div class="close">
                     <a href="javascript:void(0)" onclick="closePop1()"><i class="fa-solid fa-xmark"></i></a>
                 </div>
+                <!--彈跳視窗div的swiper  -->
                 <div class="swiper mySwiper course_swiper_1">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
@@ -381,10 +253,12 @@
                 </div>
             </div>
 
+            <!-- 彈跳視窗div -->
             <div id="popDiv2">
                 <div class="close">
                     <a href="javascript:void(0)" onclick="closePop2()"><i class="fa-solid fa-xmark"></i></a>
                 </div>
+                <!--彈跳視窗div的swiper  -->
                 <div class="swiper mySwiper course_swiper_1">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
@@ -406,10 +280,12 @@
                 </div>
             </div>
 
+            <!-- 彈跳視窗div -->
             <div id="popDiv3">
                 <div class="close">
                     <a href="javascript:void(0)" onclick="closePop3()"><i class="fa-solid fa-xmark"></i></a>
                 </div>
+                <!--彈跳視窗div的swiper  -->
                 <div class="swiper mySwiper course_swiper_1 d-flex justify-content-center">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
@@ -431,10 +307,12 @@
                 </div>
             </div>
 
+            <!-- 彈跳視窗div -->
             <div id="popDiv4">
                 <div class="close">
                     <a href="javascript:void(0)" onclick="closePop4()"><i class="fa-solid fa-xmark"></i></a>
                 </div>
+                <!--彈跳視窗div的swiper  -->
                 <div class="swiper mySwiper course_swiper_1">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
@@ -456,12 +334,12 @@
                 </div>
             </div>
 
-
-
+            <!-- 彈跳視窗div -->
             <div id="popDiv5">
                 <div class="close">
                     <a href="javascript:void(0)" onclick="closePop5()"><i class="fa-solid fa-xmark"></i></a>
                 </div>
+                <!--彈跳視窗div的swiper  -->
                 <div class="swiper mySwiper course_swiper_1">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide  "><img src="./img/course img/課程花絮_1.jpg" />
@@ -517,7 +395,7 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- Initialize 頁面Swiper -->
     <script>
 
         var swiper = new Swiper(".course_swiper", {
@@ -561,6 +439,7 @@
         });
     </script>
 
+    <!--彈跳視窗div的swiper  -->
     <script>
         var swiper = new Swiper(".course_swiper_1", {
             slidesPerView: 1,
@@ -578,6 +457,7 @@
         });
     </script>
 
+    <!--彈跳視窗div的開關  -->
     <script type="text/javascript">
         function popDiv() {
             // 獲取div元素
@@ -597,6 +477,7 @@
         }
     </script>
 
+    <!--彈跳視窗div的開關  -->
     <script type="text/javascript">
         function popDiv1() {
             // 獲取div元素
@@ -616,6 +497,7 @@
         }
     </script>
 
+    <!--彈跳視窗div的開關  -->
     <script type="text/javascript">
         function popDiv2() {
             // 獲取div元素
@@ -635,6 +517,7 @@
         }
     </script>
 
+    <!--彈跳視窗div的開關  -->
     <script type="text/javascript">
         function popDiv3() {
             // 獲取div元素
@@ -654,6 +537,7 @@
         }
     </script>
 
+    <!--彈跳視窗div的開關  -->
     <script type="text/javascript">
         function popDiv4() {
             // 獲取div元素
@@ -673,6 +557,7 @@
         }
     </script>
 
+    <!--彈跳視窗div的開關  -->
     <script type="text/javascript">
         function popDiv5() {
             // 獲取div元素
