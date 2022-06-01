@@ -43,10 +43,14 @@
                 background-color: $color_primary;
                 border-radius: 10px 10px 0px 0px;
                 box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
-                width: 90px;
-                padding: 8px;
+                width: 70px;
+                padding: 8px 2px;
                 &:hover{
                     background-color: #ecc7bf;
+                }
+                @media (min-width: 360px) {
+                    width: 90px;
+                    padding: 8px;
                 }
                 @media (min-width: $medium) {
                     width: 115px;
@@ -97,6 +101,7 @@
                         padding: 12px 0px;
                     }
                 }
+                //術前準備 術後準備
                 .left_area, .right_area{
                     background-color: $color_grey;
                     border-radius: 20px;
@@ -110,6 +115,8 @@
                         text-align: center;
                     }
                 }
+                
+                // 中間分隔線
                 .divider2{
                     width: 0px;
                     margin: 10px 0px;

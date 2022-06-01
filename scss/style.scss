@@ -78,6 +78,7 @@ ul{
         @media (min-width: $large) {
             padding-right: 24px;
         }
+        // 側邊懸浮
         .myicon_area{
             display: flex;
             justify-content: center;
@@ -106,9 +107,39 @@ ul{
                         margin: 6px;
                     }
                 }
+            }
+        }
+        // ig
+        .myicon_area>:nth-child(1):hover{
+            animation: rotate 3s linear infinite;
+            border: 3px dotted #f56040;
+            border-radius: 50%;
+            background-color: rgba(#fd1d1d,0.1);
+            
+        }
+        // Line
+        .myicon_area>:nth-child(2):hover{
+            animation: rotate 3s linear infinite;
+            border: 3px dotted #00c300;
+            border-radius: 50%;
+            background-color: rgba(#00c300,0.1);
+        }
+        // FB
+        .myicon_area>:nth-child(3):hover{
+            animation: rotate 3s linear infinite;
+            border: 3px dotted #1877f2;
+            border-radius: 50%;
+            background-color: rgba(#1877f2,0.1);
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
 
             }
+            to{
+                transform: rotate(360deg);
             
+            }
         }
         li{
             &::before{

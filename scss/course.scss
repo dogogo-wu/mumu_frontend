@@ -36,7 +36,7 @@
 		.card {
 			overflow: hidden;
 			margin: 24px auto;
-			width: 280px;
+			width: 260px;
 			height: 360px;
 			border-radius: 15px;
 			padding: 1.5rem;
@@ -147,7 +147,8 @@
 			cursor: pointer;
 			transition: 0.4s ease;
 			&:hover {
-				background: #ecc7bf;
+				color: white;
+				background-color: #5A705C;
 			}
 		}
 	}

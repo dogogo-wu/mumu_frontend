@@ -56,8 +56,8 @@ h2{
         }
         .content-2{
             padding-top: 100px;
-            // margin-left: 100px;
-            margin-right: 210px;
+            margin-left: 100px;
+            margin-right: 290px;
         }
         .content-2 :nth-child(2){
             animation-delay: 1s;
@@ -73,7 +73,11 @@ h2{
                 display: block;
             }
             .content-2{
-                padding-top: 0px;
+                padding-top: 20px;
+                margin: 0 10px 0 10px; 
+            }
+            .swiper-slide img{
+                object-fit: contain;
             }
         }
     }
@@ -148,6 +152,9 @@ h2{
             margin-left: 20px;
             margin-right: 20px;
         }
+        .swiper-slide img{
+            object-fit: contain;
+        }
     }    
 }
 
@@ -204,6 +211,10 @@ h2{
         }
         @media (max-width: $medium) {
             width: 100%;
-        }    
+            
+        }  
+        @media (max-width: $large) {
+            height: 75vh;
+        }
     }
 }
