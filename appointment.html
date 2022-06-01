@@ -81,17 +81,21 @@
             <div class="divider"></div>
             <div id="book" class="d-flex justify-content-between pt-4 pb-4">
                 <div class="appointment_notice">
+                    <!-- 電腦版 -->
                     <div class="appointment_notice_title d-flex justify-content-center">
                         預約注意事項
                     </div>
                     <div class="appointment_notice_content d-flex flex-column justify-content-center p-4">
-                        <p>加Line好友後，請複製填寫以下資訊⬇️</p>
-                        <p>📍預約資料📍</p>
-                        <p>預約項目：</p>
-                        <p>Line ID:</p>
-                        <p>姓名：</p>
-                        <p>電話：</p>
-                        <p>預約日期時間：（可一次給2、3個日期）</p>
+                        <div id="foo">
+                            <p>加Line好友後，請複製填寫以下資訊⬇️</p>
+                            <p>📍預約資料📍</p>
+                            <p>預約項目：</p>
+                            <p>Line ID:</p>
+                            <p>姓名：</p>
+                            <p>電話：</p>
+                            <p>預約日期時間：（可一次給2、3個日期）</p>
+                        </div>
+                        <button id="button" data-clipboard-text="預約項目：Line ID:姓名：電話：預約日期時間：">點擊複製預約資料</button>
                         <hr>
                         <p>預約完成後</p>
                         <p>🔺新客請於2天內完成訂金$1000匯款（當天直接抵扣），並回傳後5碼</p>
@@ -121,6 +125,7 @@
                             <p>404台中市北區進化北路177之2號(暮沐美學)</p>
                         </div>
                     </div>
+                    <!-- 手機版 -->
                     <div class="appointment_notice2 mb-3">
                         <div class="appointment_notice_title d-flex justify-content-center">
                             預約注意事項
@@ -133,6 +138,7 @@
                             <p>姓名：</p>
                             <p>電話：</p>
                             <p>預約日期時間：（可一次給2、3個日期）</p>
+                            <button id="button" data-clipboard-text="預約項目：Line ID:姓名：電話：預約日期時間："><img src="./img/copy-content (1).png" alt="" width="20px">複製預約資訊</button>
                             <hr>
                             <p>預約完成後</p>
                             <p>🔺新客請於2天內完成訂金$1000匯款（當天直接抵扣），並回傳後5碼</p>
@@ -175,5 +181,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!-- clipboard.js 複製 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script>new Clipboard('#button');</script>   
 </body>
 </html>

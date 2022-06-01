@@ -101,6 +101,7 @@
                         padding: 12px 0px;
                     }
                 }
+                //術前準備 術後準備
                 .left_area, .right_area{
                     background-color: $color_grey;
                     border-radius: 20px;
@@ -114,6 +115,8 @@
                         text-align: center;
                     }
                 }
+                
+                // 中間分隔線
                 .divider2{
                     width: 0px;
                     margin: 10px 0px;

@@ -53,6 +53,19 @@ ul {
   font-weight: 500;
 }
 
+#appointment #book .appointment_notice button {
+  background-color: #EADCD9;
+  border-style: none;
+}
+
+#appointment #book .appointment_notice button:hover {
+  background-color: #5A705C;
+  color: white;
+  -webkit-box-shadow: 5px 5px 2px #EADCD9;
+          box-shadow: 5px 5px 2px #EADCD9;
+  padding: 15px;
+}
+
 #appointment #book .divider2 {
   width: 2px;
   height: unset;

@@ -147,6 +147,52 @@ ul {
   }
 }
 
+#mynav ul .myicon_area > :nth-child(1):hover {
+  -webkit-animation: rotate 3s linear infinite;
+          animation: rotate 3s linear infinite;
+  border: 3px dotted #f56040;
+  border-radius: 50%;
+  background-color: rgba(253, 29, 29, 0.1);
+}
+
+#mynav ul .myicon_area > :nth-child(2):hover {
+  -webkit-animation: rotate 3s linear infinite;
+          animation: rotate 3s linear infinite;
+  border: 3px dotted #00c300;
+  border-radius: 50%;
+  background-color: rgba(0, 195, 0, 0.1);
+}
+
+#mynav ul .myicon_area > :nth-child(3):hover {
+  -webkit-animation: rotate 3s linear infinite;
+          animation: rotate 3s linear infinite;
+  border: 3px dotted #1877f2;
+  border-radius: 50%;
+  background-color: rgba(24, 119, 242, 0.1);
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 #mynav ul li {
   width: 100%;
 }
