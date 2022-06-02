@@ -122,14 +122,15 @@ h2{
             background-color: #EADCD9;
             border-style: none;
             border-radius: 10px;
-            box-shadow: 2px 4px 3px rgba($color: #5A705C, $alpha: 1.0);
+            box-shadow: 2px 4px 3px rgba($color: #6A6A6A, $alpha: 1.0);
             margin-left: 20px;
             margin-right: 20px;
+
         }   
     }
     .button button:hover{
         color: white;
-        background-color:#5A705C;
+        background-color:#6A6A6A;
     }
     @media (max-width: $medium) {
         .service{
@@ -155,7 +156,7 @@ h2{
         .swiper-slide img{
             object-fit: contain;
         }
-    }    
+    }
 }
 
 //Q&A
@@ -173,6 +174,7 @@ h2{
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
+        border-radius: 20px;
         .title {
             display: flex;
             justify-content: center;
@@ -203,8 +205,8 @@ h2{
                 }
                 .accordion-collapse{
                     .accordion-body{
-                        background-color: #5A705C;
-                        color: #E7E7E7;
+                        background-color: white;
+                        color: black;
                     }
                 }
             }

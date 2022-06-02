@@ -158,15 +158,15 @@ h2 {
   background-color: #EADCD9;
   border-style: none;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 4px 3px #5a705c;
-          box-shadow: 2px 4px 3px #5a705c;
+  -webkit-box-shadow: 2px 4px 3px #6a6a6a;
+          box-shadow: 2px 4px 3px #6a6a6a;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 #service .button button:hover {
   color: white;
-  background-color: #5A705C;
+  background-color: #6A6A6A;
 }
 
 @media (max-width: 768px) {
@@ -213,6 +213,7 @@ h2 {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border-radius: 20px;
 }
 
 #faq .faq .title {
@@ -251,8 +252,8 @@ h2 {
 }
 
 #faq .faq .accordion .accordion-item .accordion-collapse .accordion-body {
-  background-color: #5A705C;
-  color: #E7E7E7;
+  background-color: white;
+  color: black;
 }
 
 @media (max-width: 768px) {

@@ -163,23 +163,23 @@
   margin-left: 16px;
 }
 
-#course .card_sec .card .info .card_btn {
-  margin-top: 1rem;
-  opacity: 0;
-  padding: 0.6rem 1rem;
-  outline: none;
-  border: none;
-  border-radius: 8px;
-  background: #EADCD9;
+#course .card_sec .card .info .card_btn button {
   color: #6A6A6A;
-  font-weight: 500;
-  cursor: pointer;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  width: 126px;
+  height: 52px;
+  font-size: 16px;
+  background-color: #EADCD9;
+  border-style: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 4px 3px #5a705c;
+          box-shadow: 2px 4px 3px #5a705c;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-#course .card_sec .card .info .card_btn:hover {
-  background: #ecc7bf;
+#course .card_sec .card .info .card_btn button:hover {
+  background-color: #6A6A6A;
+  color: white;
 }
 
 #course .btn_sec {
@@ -187,23 +187,23 @@
   margin-top: 36px;
 }
 
-#course .btn_sec .out_btn {
-  margin-top: 1rem;
-  padding: 0.6rem 1rem;
-  outline: none;
-  border: none;
-  border-radius: 8px;
-  background: #EADCD9;
+#course .btn_sec button {
   color: #6A6A6A;
-  font-weight: 500;
-  cursor: pointer;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  width: 126px;
+  height: 52px;
+  font-size: 16px;
+  background-color: #EADCD9;
+  border-style: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 4px 3px #5a705c;
+          box-shadow: 2px 4px 3px #5a705c;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-#course .btn_sec .out_btn:hover {
+#course .btn_sec button:hover {
+  background-color: #6A6A6A;
   color: white;
-  background-color: #5A705C;
 }
 
 #course .mytitle {

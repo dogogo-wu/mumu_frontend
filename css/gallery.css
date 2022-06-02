@@ -184,7 +184,6 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 16px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
