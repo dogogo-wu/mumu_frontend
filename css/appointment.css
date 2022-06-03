@@ -66,6 +66,11 @@ ul {
   padding: 15px;
 }
 
+#appointment #book .appointment_notice_content button {
+  background-color: #EADCD9;
+  border-style: none;
+}
+
 #appointment #book .divider2 {
   width: 2px;
   height: unset;
