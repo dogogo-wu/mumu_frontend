@@ -252,13 +252,14 @@ h2 {
 }
 
 #faq .faq .accordion .accordion-item .accordion-collapse .accordion-body {
-  background-color: white;
+  background-color: red;
   color: black;
 }
 
 @media (max-width: 768px) {
   #faq .faq {
     width: 100%;
+    margin: 0;
   }
 }
 
