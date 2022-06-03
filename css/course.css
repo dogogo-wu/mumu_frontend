@@ -226,13 +226,8 @@
   margin-right: 20px;
 }
 
-<<<<<<< Updated upstream
 #course .btn_sec button:hover {
   background-color: #6A6A6A;
-=======
-#course .btn_sec .out_btn:hover {
-  background-color: #5A705C;
->>>>>>> Stashed changes
   color: white;
 }
 

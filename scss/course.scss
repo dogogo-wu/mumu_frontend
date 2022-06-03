@@ -154,7 +154,6 @@
 	.btn_sec{
 		text-align: center;
 		margin-top: 36px;
-<<<<<<< Updated upstream
 		
 		// .out_btn{
 		// 	margin-top: 1rem;
@@ -184,21 +183,6 @@
             margin-right: 20px;
 			&:hover{
 				background-color: #6A6A6A;
-=======
-		.out_btn{
-			margin-top: 1rem;
-			padding: 0.6rem 1rem;
-			outline: none;
-			border: none;
-			border-radius: 8px;
-			background: $color_primary;
-			color: $color_txt;
-			font-weight: 500;
-			cursor: pointer;
-			transition: 0.4s ease;
-			&:hover {
-				background-color: #5A705C;
->>>>>>> Stashed changes
 				color: white;
 			}
 			}
