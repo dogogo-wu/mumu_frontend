@@ -258,7 +258,7 @@ h2 {
 
 @media (max-width: 768px) {
   #faq .faq {
-    width: 100%;
+    width: 70%;
   }
   #faq .faq .accordion {
     margin: 0;
