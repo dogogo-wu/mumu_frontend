@@ -213,7 +213,10 @@ h2{
         }
         @media (max-width: $medium) {
             width: 100%;
-            margin: 0;
+            .accordion{
+                margin: 0;
+                border-radius: 20px;
+            }
         }  
         @media (max-width: $large) {
             height: 75vh;

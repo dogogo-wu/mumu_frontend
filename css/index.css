@@ -259,7 +259,10 @@ h2 {
 @media (max-width: 768px) {
   #faq .faq {
     width: 100%;
+  }
+  #faq .faq .accordion {
     margin: 0;
+    border-radius: 20px;
   }
 }
 
