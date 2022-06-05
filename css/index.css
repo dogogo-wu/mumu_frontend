@@ -137,13 +137,17 @@ h2 {
           justify-content: center;
 }
 
-#service .service_img img {
-  background-color: antiquewhite;
-  width: 200px;
-  height: 300px;
+#service .service_img .img-box {
   margin-top: 20px;
   margin-left: 75px;
   margin-right: 75px;
+  text-align: center;
+}
+
+#service .service_img .img-box img {
+  background-color: antiquewhite;
+  width: 200px;
+  height: 300px;
 }
 
 #service .button {
