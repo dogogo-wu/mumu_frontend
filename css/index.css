@@ -138,16 +138,16 @@ h2 {
 }
 
 #service .service_img .img-box {
+  width: 20%;
+  height: 240px;
   margin-top: 20px;
-  margin-left: 75px;
-  margin-right: 75px;
   text-align: center;
 }
 
 #service .service_img .img-box img {
   background-color: antiquewhite;
-  width: 200px;
-  height: 300px;
+  width: 215px;
+  height: 156px;
 }
 
 #service .button {
