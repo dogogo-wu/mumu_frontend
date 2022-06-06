@@ -71,12 +71,12 @@ ul {
           transform: scale(0.8);
 }
 
-#appointment #book .appointment_notice_content button {
+#appointment .appointment_notice_content button {
   background-color: #EADCD9;
   border-style: none;
 }
 
-#appointment #book .divider2 {
+#appointment .divider2 {
   width: 2px;
   height: unset;
   background-color: #A9A9A9;
@@ -85,73 +85,73 @@ ul {
 }
 
 @media (min-width: 992px) {
-  #appointment #book .divider2 {
+  #appointment .divider2 {
     display: block;
   }
 }
 
-#appointment #book .appointment_info {
+#appointment .appointment_info {
   width: 100%;
   background-color: #ffffff;
 }
 
 @media (min-width: 992px) {
-  #appointment #book .appointment_info {
+  #appointment .appointment_info {
     width: 45%;
   }
 }
 
-#appointment #book .appointment_info .line_info .line_title {
+#appointment .appointment_info .line_info .line_title {
   font-size: 16px;
 }
 
-#appointment #book .appointment_info .appointment_notice2 {
+#appointment .appointment_info .appointment_notice2 {
   background-color: #E7E7E7;
   padding: 30px;
   border-radius: 10px;
 }
 
 @media (min-width: 576px) {
-  #appointment #book .appointment_info .appointment_notice2 {
+  #appointment .appointment_info .appointment_notice2 {
     width: 80%;
     display: block;
   }
 }
 
 @media (min-width: 768px) {
-  #appointment #book .appointment_info .appointment_notice2 {
+  #appointment .appointment_info .appointment_notice2 {
     width: 80%;
     display: block;
   }
 }
 
 @media (min-width: 992px) {
-  #appointment #book .appointment_info .appointment_notice2 {
+  #appointment .appointment_info .appointment_notice2 {
     display: none;
   }
 }
 
-#appointment #book .appointment_info .appointment_notice2 .appointment_notice_title {
+#appointment .appointment_info .appointment_notice2 .appointment_notice_title {
   font-size: 20px;
 }
 
-#appointment #book .appointment_info .mumu_info {
+#appointment .appointment_info .mumu_info {
   margin: 0 auto;
 }
 
 @media (min-width: 992px) {
-  #appointment #book .appointment_info .mumu_info {
+  #appointment .appointment_info .mumu_info {
     width: 100%;
   }
 }
 
-#appointment #book .appointment_info .map_info {
+#appointment .appointment_info .map_info {
   width: 100%;
   height: 200px;
 }
 
 @media (min-width: 576px) {
-  #appointment #book .appointment_info .map_info {
+  #appointment .appointment_info .map_info {
     height: 300px;
   }
 }
