@@ -104,16 +104,43 @@ h2 {
   }
 }
 
-#service .swiper {
-  display: none;
+#pink-top-area {
+  background-image: url("../img/index/pink-top.png");
+  width: 100%;
+  height: 70px;
+  background-position: center;
+  background-size: cover;
 }
 
-#service .content {
-  display: none;
+#pink-bottom-area {
+  background-image: url("../img/index/pink-bottom.png");
+  width: 100%;
+  height: 70px;
+  background-position: center;
+  background-size: cover;
 }
 
-#service .service {
-  margin-top: 100px;
+#mumu_faith {
+  background-color: #EADCD9;
+  color: #6A6A6A;
+}
+
+@media (min-width: 768px) {
+  #mumu_faith {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 85vh;
+  }
+}
+
+@media (min-width: 992px) {
+  #mumu_faith {
+    height: 85vh;
+  }
+}
+
+#mumu_faith .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,40 +153,339 @@ h2 {
           align-items: center;
 }
 
-#service .service_img {
+@media (min-width: 768px) {
+  #mumu_faith .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#mumu_faith .container #mumu_faith_slogan {
+  width: 50%;
+  height: 360px;
+}
+
+@media (max-width: 768px) {
+  #mumu_faith .container #mumu_faith_slogan {
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+#mumu_faith .container #mumu_faith_slogan #mumu_slogan_frame {
+  width: 300px;
+  height: 350px;
+  border: 3px solid white;
+  margin-top: -120px;
+}
+
+@media (max-width: 992px) {
+  #mumu_faith .container #mumu_faith_slogan #mumu_slogan_frame {
+    background-color: #7a847c;
+    opacity: 0.8;
+    border: none;
+  }
+}
+
+#mumu_faith .container #mumu_faith_slogan #mumu_slogan_frame #mumu_slogan_brush {
+  width: 300px;
+  height: 350px;
+  position: relative;
+}
+
+#mumu_faith .container #mumu_faith_slogan #mumu_slogan_frame #mumu_slogan_brush .mumu_brush {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #mumu_faith .container #mumu_faith_slogan #mumu_slogan_frame #mumu_slogan_brush .mumu_brush {
+    display: block;
+    width: 450px;
+    height: 250px;
+    background-color: #7a847c;
+    position: absolute;
+    top: 30px;
+    left: -75px;
+    -webkit-transform: 0;
+            transform: 0;
+    opacity: 0.8;
+  }
+}
+
+#mumu_faith .container #mumu_faith_slogan #mumu_slogan_frame #mumu_slogan_brush .mumu_logo_name {
+  width: 50px;
+  position: absolute;
+  left: 120px;
+  top: 50px;
+}
+
+#mumu_faith .container #mumu_faith_slogan #mumu_slogan_frame #mumu_slogan_brush .slogan_contents {
+  position: absolute;
+  z-index: 0;
+  top: 150px;
+  left: 10px;
+}
+
+#mumu_faith .container #mumu_faith_slogan #mumu_slogan_frame #mumu_slogan_brush .slogan_contents p {
+  color: white;
+}
+
+#mumu_faith .container #mumu_faith_slogan #mumu_slogan_frame .studio {
+  font-size: 12px;
+  margin: 0 auto;
+  color: white;
+}
+
+#mumu_faith .container #mumu_faith_content_and_notice {
+  width: 100%;
+  margin-top: -80px;
+}
+
+@media (min-width: 768px) {
+  #mumu_faith .container #mumu_faith_content_and_notice {
+    width: 50%;
+  }
+}
+
+#mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_content {
+  width: 100%;
+  background-color: #7a847c;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  opacity: 0.8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10px;
 }
 
-#service .service_img .img-box {
-  width: 20%;
-  height: 240px;
-  margin-top: 20px;
+@media (min-width: 768px) {
+  #mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_content {
+    width: 80%;
+    height: 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #7a847c;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  #mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_content .img_box {
+    width: 150px;
+  }
+}
+
+#mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_content .mumu_content_words {
+  color: #ffffff;
+}
+
+#mumu_faith .container #mumu_faith_content_and_notice .flower_img {
+  width: 80px;
+}
+
+#mumu_faith .container #mumu_faith_content_and_notice .material_img {
+  width: 80px;
+}
+
+#mumu_faith .container #mumu_faith_content_and_notice .service_img {
+  width: 80px;
+}
+
+#mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_notice {
+  font-size: 16px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_notice {
+    width: 80%;
+  }
+}
+
+#mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_notice p {
+  margin-bottom: 0;
+}
+
+#mumu_advertisement {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: #6A6A6A;
+}
+
+#mumu_advertisement .services_title {
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-top: -20px;
+}
+
+#mumu_advertisement .services_title .title_dot_line .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #6a6a6a;
+  border-radius: 50px;
+}
+
+#mumu_advertisement .services_title .title_dot_line .dot_line {
+  width: 200px;
+  height: 1px;
+  background-color: #6a6a6a;
+}
+
+#mumu_advertisement .swiper {
+  width: 80%;
+  height: 100%;
+  border: none;
+}
+
+#mumu_advertisement .swiper .swiper-slide {
   text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-#service .service_img .img-box img {
-  background-color: antiquewhite;
-  width: 215px;
-  height: 156px;
+#mumu_advertisement .swiper .swiper-slide img {
+  display: block;
+  width: 220px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-#service .button {
+#mumu_services {
+  background-color: #EADCD9;
+  color: #6A6A6A;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#mumu_services .swiper {
+  margin-top: 20px;
+  display: none;
+}
+
+#mumu_services .swiper img {
+  opacity: 0.7;
+}
+
+#mumu_services .content {
+  display: none;
+}
+
+#mumu_services .services_title {
+  font-size: 20px;
+}
+
+#mumu_services .services_title .title_dot_line .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+#mumu_services .services_title .title_dot_line .dot_line {
+  width: 200px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+#mumu_services .services_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#mumu_services .services_card .sevice_cards_container {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#mumu_services .services_card .sevice_cards_container .each_service_option {
+  font-size: 20px;
+  height: 30%;
+}
+
+#mumu_services .services_card .sevice_cards_container .service_img {
+  width: 100%;
+  height: 70%;
+}
+
+#mumu_services .services_card .sevice_cards_container .service_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+}
+
+#mumu_services .button {
   margin-top: 50px;
 }
 
-#service .button button {
+#mumu_services .button button {
   color: #6A6A6A;
   width: 126px;
   height: 52px;
   font-size: 16px;
-  background-color: #EADCD9;
+  background-color: white;
   border-style: none;
   border-radius: 10px;
   -webkit-box-shadow: 2px 4px 3px #6a6a6a;
@@ -168,35 +494,42 @@ h2 {
   margin-right: 20px;
 }
 
-#service .button button:hover {
+@media (max-width: 768px) {
+  #mumu_services .button button {
+    width: 100px;
+    margin: auto 10px;
+  }
+}
+
+#mumu_services .button button:hover {
   color: white;
   background-color: #6A6A6A;
 }
 
 @media (max-width: 768px) {
-  #service .service {
+  #mumu_services .service {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #service .service_img {
+  #mumu_services .services_card {
     display: none;
   }
-  #service .content {
+  #mumu_services .content {
     display: block;
     padding-top: 50px;
   }
-  #service .swiper {
+  #mumu_services .swiper {
     display: block;
   }
-  #service .button :nth-child(2) {
+  #mumu_services .button :nth-child(2) {
     display: none;
   }
-  #service button {
+  #mumu_services button {
     margin-left: 20px;
     margin-right: 20px;
   }
-  #service .swiper-slide img {
+  #mumu_services .swiper-slide img {
     -o-object-fit: contain;
        object-fit: contain;
   }
