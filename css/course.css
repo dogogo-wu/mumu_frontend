@@ -94,7 +94,7 @@
   color: white;
 }
 
-#course .card_sec .card:hover .info .card_btn {
+#course .card_sec .card:hover .info .card_btn button {
   opacity: 1;
 }
 
@@ -175,6 +175,7 @@
           box-shadow: 2px 4px 3px #5a705c;
   margin-left: 20px;
   margin-right: 20px;
+  opacity: 0;
 }
 
 #course .card_sec .card .info .card_btn button:hover {

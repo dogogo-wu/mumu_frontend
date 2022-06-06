@@ -58,7 +58,9 @@
 						color: white;
 					}
 					.card_btn{
-						opacity: 1;
+						button{
+							opacity: 1;
+						}
 					}
 				}
 			}
@@ -122,6 +124,7 @@
 						box-shadow: 2px 4px 3px rgba($color: #5A705C, $alpha: 1.0);
 						margin-left: 20px;
 						margin-right: 20px;
+						opacity: 0;
 					
 						&:hover{
 							background-color: #6A6A6A;

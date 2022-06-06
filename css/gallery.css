@@ -184,6 +184,7 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  border-radius: 16px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -198,5 +199,46 @@
   #gallery .mytab_area .outer_tab_content .tab_content_area .tab_pic .img_div img {
     width: 215px;
   }
+}
+
+#gallery .modal_swiper_area {
+  width: 100%;
+}
+
+#gallery .modal_swiper_area .modal_swiper {
+  width: 100%;
+  max-height: 75vh;
+  margin: 20px auto;
+}
+
+#gallery .modal_swiper_area .modal_swiper .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+#gallery .modal_swiper_area .modal_swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  max-height: 75vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+}
+
+#gallery .modal_swiper_area .swiper-pagination-bullet-active {
+  background-color: #95AFD6;
+}
+
+#gallery .mymodal_all {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=gallery.css.map */
