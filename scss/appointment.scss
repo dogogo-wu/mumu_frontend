@@ -61,7 +61,11 @@ ul{
                     color: white;
                     box-shadow:5px 5px 2px #EADCD9;
                     padding: 15px;
+                    &:active{
+                        transform: scale(0.8);
+                    }
                 }
+                
             }
         }
         .appointment_notice_content{
