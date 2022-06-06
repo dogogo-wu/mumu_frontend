@@ -194,18 +194,18 @@
 	}
 
 	.swiper_area{
-		width: 90%;
+		width: 100%;
 		margin-bottom: 48px;
 		@media (min-width: $medium) {
 			width: 80%;
 		}
 		.course_swiper {
-			width: 80%;
-			height: 400px;
-			margin: 20px auto;
+			width: 100%;
+			height: 360px;
+			margin: 0px auto;
 			@media (min-width: $medium) {
-				width: 100%;
-				height: 200px;
+				height: 240px;
+				margin: 20px auto;
 			}
 			.swiper-slide{
 				/* Center slide text vertically */
@@ -221,14 +221,17 @@
 				-ms-flex-align: center;
 				-webkit-align-items: center;
 				align-items: center;
+				width: 100%;
 				img{
 					display: block;
-					height: 400px;
+					height: 360px;
+					max-width: 100%;
+					aspect-ratio: 260/360;
 					object-fit: cover;
 					object-position: center;
 					border-radius: 5px;
 					@media (min-width: $medium) {
-						height: 200px;
+						height: 240px;
 					}
 				}
 			}
@@ -244,8 +247,12 @@
 		width: 100%;
 		.modal_swiper {
 			width: 100%;
-			height: 75vh;
+			max-height: 75vh;
 			margin: 20px auto;
+			@media (min-width: $medium) {
+				width: unset;
+				max-height: 75vh;
+			}
 			.swiper-slide{
 				/* Center slide text vertically */
 				display: -webkit-box;
@@ -260,12 +267,19 @@
 				-ms-flex-align: center;
 				-webkit-align-items: center;
 				align-items: center;
+				width: 100%;
 				img{
 					display: block;
-					height: 75vh;
+					width: 100%;
+					max-height: 75vh;
+					aspect-ratio: 260/360;
 					object-fit: cover;
 					object-position: center;
 					border-radius: 5px;
+					@media (min-width: $medium) {
+						width: unset;
+						max-height: 75vh;
+					}
 				}
 			} 
 			
@@ -277,14 +291,8 @@
 		}
 	}
 
-	// #myModal{
-	// 	background-color: rgba(black, 0.6);
-	// 	.modal-content{
-	// 		background-color: rgba(black, 0);
-	// 		border: 0px;
-
-	// 	}
-		
-	// }
+	#myModal{
+		background-color: rgba(black, 0.5);	
+	}
 
 }
