@@ -259,6 +259,19 @@
   }
 }
 
+#course .swiper_area .course_swiper .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 #course .swiper_area .course_swiper .swiper-slide img {
   display: block;
   height: 400px;
@@ -276,6 +289,43 @@
 }
 
 #course .swiper_area .swiper-pagination-bullet-active {
+  background-color: #95AFD6;
+}
+
+#course .modal_swiper_area {
+  width: 100%;
+}
+
+#course .modal_swiper_area .modal_swiper {
+  width: 100%;
+  height: 75vh;
+  margin: 20px auto;
+}
+
+#course .modal_swiper_area .modal_swiper .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#course .modal_swiper_area .modal_swiper .swiper-slide img {
+  display: block;
+  height: 75vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 5px;
+}
+
+#course .modal_swiper_area .swiper-pagination-bullet-active {
   background-color: #95AFD6;
 }
 /*# sourceMappingURL=course.css.map */
