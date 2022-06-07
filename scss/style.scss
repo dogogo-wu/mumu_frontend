@@ -67,8 +67,51 @@ ul{
         }
     }
     .navbar-toggler{
-        margin-right: 5px;
+        width: 56px;
+        height: 40px;
+        margin-right: 10px;
+        position: relative;
+
+        &:focus, &:active{
+            box-shadow: none;
+        }
+        .mystick{
+            width: 24px;
+            height: 2px;  
+            border-radius: 1px;
+            background-color: #6a6362;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            transition: top 0.25s 0s ease-in-out,
+                        transform 0.25s 0.25s ease-in-out;
+        }
+
+        .stick1{
+            transform:translate(-50%, -50%) rotate(45deg);
+        }
+        .stick2, .stick3{
+            transform:translate(-50%, -50%) rotate(-45deg);
+        }
     }
+    .navbar-toggler.collapsed{
+        .mystick{
+            transform: translate(-50%, -50%);
+            transition: top 0.25s 0.25s ease-in-out,
+                        transform 0.25s 0s ease-in-out;
+        }
+        .stick1{
+            top: 27.5%;
+        }
+        .stick2{
+            top: 50%;
+        }
+        .stick3{
+            top: 72.5%;
+        }
+    }
+
     ul{
         font-weight: 500;
         font-size: 16px;
