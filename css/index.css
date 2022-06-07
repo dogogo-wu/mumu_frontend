@@ -436,7 +436,6 @@ h2 {
 
 #faq .faq {
   width: 50%;
-  height: 531px;
   background-color: #EADCD9;
   position: absolute;
   left: 50%;
@@ -489,7 +488,6 @@ h2 {
 @media (max-width: 768px) {
   #faq .faq {
     width: 100%;
-    height: 100%;
   }
   #faq .faq .accordion {
     margin: 0;
@@ -498,7 +496,7 @@ h2 {
 
 @media (max-width: 992px) {
   #faq .faq {
-    height: 75vh;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */

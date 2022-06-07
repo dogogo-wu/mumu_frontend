@@ -386,9 +386,7 @@ h2{
     color: #6A6A6A;
     
     .faq{
-        
         width: 50%;
-        height: 531px;
         background-color: $color_primary;
         position: absolute;
         left: 50%;
@@ -433,13 +431,12 @@ h2{
         }
         @media (max-width: $medium) {
             width: 100%;
-            height: 100%;
             .accordion{
                 margin: 0;
             }
         }  
         @media (max-width: $large) {
-            height: 75vh;
+            width: 100%;
         }
     }
 }
