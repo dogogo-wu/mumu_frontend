@@ -11,103 +11,10 @@ h2 {
   color: #5A705C;
 }
 
-#about .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-#about .about .title {
-  font-size: 50px;
-}
-
-#about .about .content {
-  list-style-type: circle;
-  list-style-position: inside;
-}
-
-#about .about .content li {
-  color: #6A6A6A;
-}
-
-#about .about .about_img {
-  margin-left: 100px;
-  margin-right: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-}
-
-#about .about .about_img img {
-  background-color: antiquewhite;
-  width: 200px;
-  height: 300px;
-  margin-left: 50px;
-  margin-right: 50px;
-  border: 1px solid #EADCD9;
-  -webkit-box-shadow: 4px 4px 2px #EADCD9;
-          box-shadow: 4px 4px 2px #EADCD9;
-  border-radius: 5px;
-}
-
-#about .about .about_img img:hover {
-  opacity: 0.9;
-  -webkit-transform: rotateY(-30deg);
-          transform: rotateY(-30deg);
-}
-
-#about .about .swiper {
-  display: none;
-}
-
-#about .about .content-2 {
-  padding-top: 100px;
-  margin-left: 100px;
-  margin-right: 290px;
-}
-
-#about .about .content-2 :nth-child(2) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-@media (max-width: 768px) {
-  #about .about .about {
-    margin-bottom: 100px;
-  }
-  #about .about .about_img {
-    display: none;
-  }
-  #about .about .swiper {
-    display: block;
-  }
-  #about .about .content-2 {
-    padding-top: 20px;
-    margin: 0 10px 0 10px;
-  }
-  #about .about .swiper-slide img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-
 #pink-top-area {
   background-image: url("../img/index/pink-top.png");
   width: 100%;
-  height: 70p\;;
+  height: 10vh;
   background-position: center;
   background-size: cover;
 }
@@ -115,27 +22,23 @@ h2 {
 #pink-bottom-area {
   background-image: url("../img/index/pink-bottom.png");
   width: 100%;
-  height: 70px;
+  height: 10vh;
   background-position: center;
   background-size: cover;
 }
 
 #mumu_faith {
+  margin-top: -5px;
+  margin-bottom: -5px;
   background-color: #EADCD9;
   color: #6A6A6A;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #mumu_faith {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 85vh;
-  }
-}
-
-@media (min-width: 992px) {
-  #mumu_faith {
     height: 85vh;
   }
 }
@@ -153,7 +56,7 @@ h2 {
           align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #mumu_faith .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -173,7 +76,7 @@ h2 {
   height: 360px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #mumu_faith .container #mumu_faith_slogan {
     height: 450px;
     display: -webkit-box;
@@ -254,7 +157,7 @@ h2 {
   margin-top: -80px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #mumu_faith .container #mumu_faith_content_and_notice {
     width: 50%;
   }
@@ -282,7 +185,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_content {
     width: 80%;
     height: 100px;
@@ -321,16 +224,13 @@ h2 {
 #mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_notice {
   font-size: 16px;
   width: 100%;
+  padding-left: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_notice {
     width: 80%;
   }
-}
-
-#mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_notice p {
-  margin-bottom: 0;
 }
 
 #mumu_advertisement {
@@ -396,6 +296,8 @@ h2 {
 }
 
 #mumu_services {
+  margin-top: -5px;
+  margin-bottom: -5px;
   background-color: #EADCD9;
   color: #6A6A6A;
   width: 100%;
@@ -423,14 +325,14 @@ h2 {
 #mumu_services .services_title .title_dot_line .dot {
   width: 8px;
   height: 8px;
-  background-color: #ffffff;
+  background-color: #6a6a6a;
   border-radius: 50px;
 }
 
 #mumu_services .services_title .title_dot_line .dot_line {
   width: 200px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #6a6a6a;
 }
 
 #mumu_services .services_card {
@@ -458,6 +360,13 @@ h2 {
   border-radius: 15px;
 }
 
+@media (max-width: 576px) {
+  #mumu_services .services_card .sevice_cards_container {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 #mumu_services .services_card .sevice_cards_container .each_service_option {
   font-size: 20px;
   height: 30%;
@@ -473,7 +382,6 @@ h2 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.7;
 }
 
 #mumu_services .button {
@@ -507,21 +415,6 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  #mumu_services .service {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #mumu_services .services_card {
-    display: none;
-  }
-  #mumu_services .content {
-    display: block;
-    padding-top: 50px;
-  }
-  #mumu_services .swiper {
-    display: block;
-  }
   #mumu_services .button :nth-child(2) {
     display: none;
   }
