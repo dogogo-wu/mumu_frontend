@@ -171,8 +171,8 @@
   background-color: #EADCD9;
   border-style: none;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 4px 3px #5a705c;
-          box-shadow: 2px 4px 3px #5a705c;
+  -webkit-box-shadow: 2px 3px 4px white;
+          box-shadow: 2px 3px 4px white;
   margin-left: 20px;
   margin-right: 20px;
   opacity: 0;
@@ -221,8 +221,8 @@
   background-color: #EADCD9;
   border-style: none;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 4px 3px #5a705c;
-          box-shadow: 2px 4px 3px #5a705c;
+  -webkit-box-shadow: 2px 4px 3px #6a6a6a;
+          box-shadow: 2px 4px 3px #6a6a6a;
   margin-left: 20px;
   margin-right: 20px;
 }
