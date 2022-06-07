@@ -54,16 +54,21 @@ ul {
 }
 
 #appointment #book .appointment_notice button {
+  color: #6A6A6A;
+  width: 200px;
+  height: 52px;
+  font-size: 16px;
   background-color: #EADCD9;
   border-style: none;
+  border-radius: 10px;
+  padding: 0;
 }
 
 #appointment #book .appointment_notice button:hover {
-  background-color: #5A705C;
+  background-color: #6A6A6A;
   color: white;
   -webkit-box-shadow: 5px 5px 2px #EADCD9;
           box-shadow: 5px 5px 2px #EADCD9;
-  padding: 15px;
 }
 
 #appointment #book .appointment_notice button:hover:active {
@@ -72,8 +77,14 @@ ul {
 }
 
 #appointment .appointment_notice_content button {
+  color: #6A6A6A;
+  width: 200px;
+  height: 52px;
+  font-size: 16px;
   background-color: #EADCD9;
   border-style: none;
+  border-radius: 10px;
+  padding: 0;
 }
 
 #appointment .divider2 {
