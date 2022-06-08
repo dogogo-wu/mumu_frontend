@@ -550,6 +550,7 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 20px;
+  padding-bottom: 20px;
 }
 
 #faq .faq .title {
