@@ -416,7 +416,7 @@ h2{
                 margin: auto 10px;
             }
 
-        }   
+        }
     }
     .button button:hover{
         color: white;
@@ -436,6 +436,49 @@ h2{
         }
     }
 
+    #myServiceModal{
+        background-color: rgba(black, 0.5);
+        .modal-dialog{
+            max-width: $small;
+        }
+        .modal-body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            @media (min-width: $small) {
+                flex-direction: row;
+            }
+            .myser_img_area{
+                width: 250px;
+                height: 175px;
+                margin-right: 0px;
+                @media (min-width: $small) {
+                    margin-right: 36px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+            }
+            .myser_content{
+                ul{
+                    margin-left: 0px;
+                    margin-bottom: 0px;
+                    padding-top: 16px;
+                    @media (min-width: $small) {
+                        margin-left: 16px;
+                        padding-top: 0px;
+                    }
+                    li{
+                        margin: 8px 0px;
+                    }
+                }
+            }
+        }
+        
+    }
 }
 //Q&A
 #faq{
