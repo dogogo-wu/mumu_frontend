@@ -201,6 +201,12 @@ h2 {
 
 @media (min-width: 992px) {
   #mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_content .img_box {
+    width: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #mumu_faith .container #mumu_faith_content_and_notice .mumu_faith_content .img_box {
     width: 150px;
   }
 }

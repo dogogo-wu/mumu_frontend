@@ -160,10 +160,17 @@ h2{
                     border-radius: 15px;
                 }
                 .img_box{
+
+                
                     @media (min-width:$large) {
                         // background-color: aquamarine;
+                        width: 120px;
+                    }
+                    @media (min-width:$xl) {
+                        // background-color: rgb(240, 127, 255);
                         width: 150px;
                     }
+                    
                     
                 }
                 
