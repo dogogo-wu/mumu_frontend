@@ -374,7 +374,9 @@ h2{
             margin: 10px;
             background-color: rgb(255, 255, 255);
             border-radius: 15px;
-
+            &:hover{
+                cursor: pointer;
+            }
             @media (max-width:$small) {
                 width: 150px;
                 height: 150px;

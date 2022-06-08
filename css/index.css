@@ -427,6 +427,10 @@ h2 {
   border-radius: 15px;
 }
 
+#mumu_services .services_card .sevice_cards_container:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 576px) {
   #mumu_services .services_card .sevice_cards_container {
     width: 150px;
