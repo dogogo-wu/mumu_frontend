@@ -1,5 +1,32 @@
 @import 'variable';
 
+
+// $color_primary : #EADCD9;
+// $color_sec : #5A705C;
+// $color_grey : #E7E7E7;
+// $color_txt : #6A6A6A;
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #5A705C; 
+    // border-radius: 10px;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6A6A6A; 
+    border-radius: 10px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5A705C; 
+}
 *{
     transition: 0.5s;
     font-family: 'Noto Sans TC', sans-serif;
