@@ -296,7 +296,13 @@
 }
 
 #course .swiper_area .swiper-button-next {
-  right: 50px;
+  right: 0px;
+}
+
+@media (min-width: 768px) {
+  #course .swiper_area .swiper-button-next {
+    right: 50px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -313,7 +319,13 @@
 }
 
 #course .swiper_area .swiper-button-prev {
-  left: 50px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  #course .swiper_area .swiper-button-prev {
+    left: 50px;
+  }
 }
 
 @media (min-width: 768px) {
