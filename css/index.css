@@ -505,4 +505,10 @@ h2 {
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  #faq .faq {
+    padding-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
