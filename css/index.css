@@ -443,7 +443,6 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 20px;
-  padding-bottom: 20px;
 }
 
 #faq .faq .title {
@@ -498,6 +497,12 @@ h2 {
 @media (max-width: 992px) {
   #faq .faq {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #faq .faq {
+    padding-bottom: 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */
