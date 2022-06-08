@@ -105,7 +105,7 @@
                         }
                         img{
                             width: 150px;
-                            aspect-ratio: 16/16;
+                            height: 150px;
                             object-fit: cover;
                             object-position: center;
                             border-radius: 16px;
@@ -116,6 +116,7 @@
                             }
                             @media (min-width: $medium) {
                                 width: 215px;
+                                height: 215px;
                             }
                         }
                     }
