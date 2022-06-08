@@ -41,8 +41,8 @@
             <p class="m-0 en logo-txt"><em>MUMU Beauty Studio &ensp;</em></p>
         </div>
 
-        <button class="navbar-toggler collapsed d-flex d-md-none" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler collapsed d-flex d-md-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
             <div class="mystick stick1"></div>
             <div class="mystick stick2"></div>
             <div class="mystick stick3"></div>
@@ -167,25 +167,59 @@
                 <div class="swiper ad_mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./img/index/skin_care_img.jpeg" alt="">
+                            <img src="./img/index/skin_care_img.jpeg" alt="" data-bs-toggle="modal"
+                            data-bs-target="#myModal" data-bs-pic="1">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/index/ad_2.jpg" alt="">
+                            <img src="./img/index/ad_2.jpg" alt="" data-bs-toggle="modal"
+                            data-bs-target="#myModal" data-bs-pic="2">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/index/ad_3.jpg" alt="">
+                            <img src="./img/index/ad_3.jpg" alt="" data-bs-toggle="modal"
+                            data-bs-target="#myModal" data-bs-pic="3">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/index/ad_1.jpg" alt="">
+                            <img src="./img/index/ad_1.jpg" alt="" data-bs-toggle="modal"
+                            data-bs-target="#myModal" data-bs-pic="4">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/index/ad_2.jpg" alt="">
+                            <img src="./img/index/ad_2.jpg" alt="" data-bs-toggle="modal"
+                            data-bs-target="#myModal" data-bs-pic="5">
                         </div>
                         <div class="swiper-slide">
-                            <img src="./img/index/skin_care_img.jpeg" alt="">
+                            <img src="./img/index/skin_care_img.jpeg" alt="" data-bs-toggle="modal"
+                            data-bs-target="#myModal" data-bs-pic="6">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="myModalLabel">最新消息</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal_swiper_area">
+                                <div class="swiper modal_swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="./img/index/skin_care_img.jpeg" /></div>
+                                        <div class="swiper-slide"><img src="./img/index/ad_2.jpg" /></div>
+                                        <div class="swiper-slide"><img src="./img/index/ad_3.jpg" /></div>
+                                        <div class="swiper-slide"><img src="./img/index/ad_1.jpg" /></div>
+                                        <div class="swiper-slide"><img src="./img/index/ad_2.jpg" /></div>
+                                        <div class="swiper-slide"><img src="./img/index/skin_care_img.jpeg" /></div>
+                                    </div>
+                                    <div class="myswiper-btn swiper-button-next"></div>
+                                    <div class="myswiper-btn swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -455,6 +489,32 @@
                 disableOnInteraction: false,
             },
         });
+
+        // modal swiper
+        var modal_swiper = new Swiper(".modal_swiper", {
+            slidesPerView: 1,
+            spaceBetweenSlides: 50,
+            centeredSlides: true,
+            speed: 1200,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            keyboard: true,
+        });
+
+        // Modal script
+        const myModal = document.getElementById('myModal');
+        myModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget;
+            const pic_index = button.getAttribute('data-bs-pic');
+            modal_swiper.slideTo(pic_index);
+        })
     </script>
 
 </body>

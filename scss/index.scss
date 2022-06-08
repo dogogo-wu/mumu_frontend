@@ -264,9 +264,60 @@ h2{
                 object-fit: cover;
             }
         }
+        .swiper-pagination-bullet-active {
+			background-color: #95AFD6;
+			
+		}
     }
 
+    .modal_swiper_area{
+		width: 100%;
+		.modal_swiper {
+			width: 100%;
+			height: 65vh;
+			margin: 20px auto;
+			@media (min-width: $large) {
+				width: unset;
+				height: 75vh;
+			}
+			.swiper-slide{
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				width: 100%;
+				img{
+					display: block;
+					width: 100%;
+					height: 65vh;
+					object-fit: contain;
+					object-position: center;
+					border-radius: 5px;
+					@media (min-width: $large) {
+						width: unset;
+						height: 75vh;
+					}
+				}
+			}
 
+		}
+		.swiper-pagination-bullet-active {
+			background-color: #95AFD6;
+		}
+	}
+
+	#myModal{
+		background-color: rgba(black, 0.5);	
+	}
     
 }
 //服務項目

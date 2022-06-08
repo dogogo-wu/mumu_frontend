@@ -199,16 +199,18 @@
 	.swiper_area{
 		width: 100%;
 		margin-bottom: 48px;
+		position: relative;
 		@media (min-width: $medium) {
 			width: 80%;
 		}
 		.course_swiper {
-			width: 100%;
-			height: 360px;
+			width: 90%;
+			height: 300px;
 			margin: 0px auto;
 			@media (min-width: $medium) {
 				height: 240px;
 				margin: 20px auto;
+				width: 100%;
 			}
 			.swiper-slide{
 				/* Center slide text vertically */
@@ -227,19 +229,44 @@
 				width: 100%;
 				img{
 					display: block;
-					height: 360px;
-					max-width: 100%;
+					height: 300px;
+					max-width: 90%;
 					aspect-ratio: 260/360;
 					object-fit: cover;
 					object-position: center;
 					border-radius: 5px;
 					@media (min-width: $medium) {
 						height: 240px;
+						max-width: 100%;
 					}
 				}
 			}
 
 		}
+		.swiper-button-next {
+			right: 50px;
+			@media (min-width: $medium) {
+				margin-top: 0px;
+				position: absolute;
+				top: 50%;
+				right: -40px;
+				width: 45px;
+				height: 45px;
+				transform: translateY(-50%);
+			}
+		  }
+		  .swiper-button-prev {
+			left: 50px;
+			@media (min-width: $medium) {
+				position: absolute;
+				top: 50%;
+				left: -40px;
+				width: 45px;
+				height: 45px;
+				transform: translateY(-50%);
+				margin-top: 0px;
+			}
+		  }
 		.swiper-pagination-bullet-active {
 			background-color: #95AFD6;
 			
@@ -250,9 +277,9 @@
 		width: 100%;
 		.modal_swiper {
 			width: 100%;
-			max-height: 75vh;
+			max-height: 65vh;
 			margin: 20px auto;
-			@media (min-width: $medium) {
+			@media (min-width: $large) {
 				width: unset;
 				max-height: 75vh;
 			}
@@ -274,12 +301,12 @@
 				img{
 					display: block;
 					width: 100%;
-					max-height: 75vh;
+					max-height: 65vh;
 					aspect-ratio: 260/360;
 					object-fit: cover;
 					object-position: center;
 					border-radius: 5px;
-					@media (min-width: $medium) {
+					@media (min-width: $large) {
 						width: unset;
 						max-height: 75vh;
 					}
