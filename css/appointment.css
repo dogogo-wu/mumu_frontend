@@ -62,13 +62,15 @@ ul {
   border-style: none;
   border-radius: 10px;
   padding: 0;
+  -webkit-box-shadow: 2px 4px 3px #6a6a6a;
+          box-shadow: 2px 4px 3px #6a6a6a;
 }
 
 #appointment #book .appointment_notice button:hover {
   background-color: #6A6A6A;
   color: white;
-  -webkit-box-shadow: 5px 5px 2px #EADCD9;
-          box-shadow: 5px 5px 2px #EADCD9;
+  -webkit-box-shadow: 2px 4px 3px #6a6a6a;
+          box-shadow: 2px 4px 3px #6a6a6a;
 }
 
 #appointment #book .appointment_notice button:hover:active {
@@ -85,6 +87,8 @@ ul {
   border-style: none;
   border-radius: 10px;
   padding: 0;
+  -webkit-box-shadow: 2px 4px 3px #6a6a6a;
+          box-shadow: 2px 4px 3px #6a6a6a;
 }
 
 #appointment .divider2 {

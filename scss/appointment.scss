@@ -61,12 +61,11 @@ ul{
                 border-style: none;
                 border-radius: 10px;
                 padding: 0;
-
-                
+                box-shadow: 2px 4px 3px #6a6a6a;
                 &:hover{
                     background-color: #6A6A6A;
                     color: white;
-                    box-shadow:5px 5px 2px #EADCD9;
+                    box-shadow: 2px 4px 3px #6a6a6a;
                     // padding: 15px;
                     &:active{
                         transform: scale(0.8);
@@ -86,7 +85,7 @@ ul{
                 border-style: none;
                 border-radius: 10px;
                 padding: 0;
-
+                box-shadow: 2px 4px 3px #6a6a6a;
             }
         }
 
