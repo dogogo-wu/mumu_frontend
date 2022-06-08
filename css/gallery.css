@@ -179,7 +179,7 @@
 
 #gallery .mytab_area .outer_tab_content .tab_content_area .tab_pic .img_div img {
   width: 150px;
-  aspect-ratio: 16/16;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -198,6 +198,7 @@
 @media (min-width: 768px) {
   #gallery .mytab_area .outer_tab_content .tab_content_area .tab_pic .img_div img {
     width: 215px;
+    height: 215px;
   }
 }
 

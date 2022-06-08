@@ -52,18 +52,17 @@ ul{
         background-color: $color_primary;
     }
     .mylogo-area{
-        color: $color_txt;
-        font-size: 16px;
-        font-weight: 500;
-        padding-left: 0px;
         height: 60px;
-        @media (min-width: $large) {
-            padding-left: 24px;
+        @media (min-width: $medium) {
             height: 80px;
         }
-
         a{
-            margin-right: 8px;
+
+            margin-right: 0px;
+            padding-left: 0px;
+            @media (min-width: $large) {
+                padding-left: 24px;
+            }
             .logo{
                 height: 60px;
                 position: absolute;
@@ -71,27 +70,35 @@ ul{
                 left: 50%;
                 top: 0;
                 @media (min-width: $medium) {
+                    margin-right: 8px;
                     height: 80px;
                     position: relative;
+                    transform: unset;
+                    left: 0;
+                }
+            }
+            .logo-txt{
+                display: none;
+                color: $color_txt;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 80px;
+                @media (min-width: $medium) {
+                    display: unset;
+                }
+            }
+            .en{
+                font-weight: 300;
+                font-style: italic;
+                letter-spacing: 0.5px;
+                padding-left: 2px;
+                @media (min-width: $medium) {
+                    padding-left: 6px;
                 }
             }
         }
         
-        .logo-txt{
-            display: none;
-            @media (min-width: $medium) {
-                display: unset;
-            }
-        }
-        .en{
-            font-weight: 300;
-            font-style: italic;
-            letter-spacing: 0.5px;
-            padding-left: 2px;
-            @media (min-width: $medium) {
-                padding-left: 6px;
-            }
-        }
+
     }
     .navbar-toggler{
         width: 56px;
@@ -233,7 +240,7 @@ ul{
             a{
                 padding: 24px 8px;
                 text-align: center;
-                
+
                 @media (min-width: $large) {
                     padding: 24px 16px;
                 }

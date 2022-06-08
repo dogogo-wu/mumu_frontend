@@ -54,22 +54,24 @@ ul {
 }
 
 #mynav .mylogo-area {
-  color: #6A6A6A;
-  font-size: 16px;
-  font-weight: 500;
-  padding-left: 0px;
   height: 60px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #mynav .mylogo-area {
-    padding-left: 24px;
     height: 80px;
   }
 }
 
 #mynav .mylogo-area a {
-  margin-right: 8px;
+  margin-right: 0px;
+  padding-left: 0px;
+}
+
+@media (min-width: 992px) {
+  #mynav .mylogo-area a {
+    padding-left: 24px;
+  }
 }
 
 #mynav .mylogo-area a .logo {
@@ -83,22 +85,30 @@ ul {
 
 @media (min-width: 768px) {
   #mynav .mylogo-area a .logo {
+    margin-right: 8px;
     height: 80px;
     position: relative;
+    -webkit-transform: unset;
+            transform: unset;
+    left: 0;
   }
 }
 
-#mynav .mylogo-area .logo-txt {
+#mynav .mylogo-area a .logo-txt {
   display: none;
+  color: #6A6A6A;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 80px;
 }
 
 @media (min-width: 768px) {
-  #mynav .mylogo-area .logo-txt {
+  #mynav .mylogo-area a .logo-txt {
     display: unset;
   }
 }
 
-#mynav .mylogo-area .en {
+#mynav .mylogo-area a .en {
   font-weight: 300;
   font-style: italic;
   letter-spacing: 0.5px;
@@ -106,7 +116,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-  #mynav .mylogo-area .en {
+  #mynav .mylogo-area a .en {
     padding-left: 6px;
   }
 }
