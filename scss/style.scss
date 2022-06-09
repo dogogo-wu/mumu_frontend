@@ -48,6 +48,30 @@ ul{
         height: 80px;
     }
 
+    .myactive{
+        position: relative;
+    }
+    .myactive a{
+        &::after{
+            display: none;
+
+            @media (min-width: $medium) {
+                content: "";
+                width: 80%;
+                height: 2px;
+                border-radius: 1px;
+                display: block;
+                background-color: #858585;
+                margin: 0 auto;
+    
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                bottom: 10px;
+            }
+        }
+
+    }
     .mycollapse{
         background-color: $color_primary;
     }

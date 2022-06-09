@@ -49,6 +49,31 @@ ul {
   }
 }
 
+#mynav .myactive {
+  position: relative;
+}
+
+#mynav .myactive a::after {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #mynav .myactive a::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    border-radius: 1px;
+    display: block;
+    background-color: #858585;
+    margin: 0 auto;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 10px;
+  }
+}
+
 #mynav .mycollapse {
   background-color: #EADCD9;
 }
