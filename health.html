@@ -54,7 +54,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.html">作品照片</a>
                 </li>
-                <li class="nav-item myactive">
+                <li class="nav-item">
                     <a class="nav-link" href="health.html">衛教資訊</a>
                 </li>
                 <li class="nav-item">
@@ -227,6 +227,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- ------------------- JS Section ------------------- -->
+    <script>
+        // 加navbar底線
+        var myli = document.querySelector('#navbarNav li:nth-child(4)');
+        myli.classList.add('myactive');
+    </script>
+
     <script>
         AOS.init();
     </script>
