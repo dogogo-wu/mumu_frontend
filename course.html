@@ -98,7 +98,7 @@
         </div>
         <div class="divider"></div>
         <div class="card_sec">
-            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once = "true">
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once="true">
                 <img src="./img/course/img_01.jpg" alt="" style="opacity: 0.5;">
                 <div class="info">
                     <p class="card_title">霧眉課程</p>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once = "true">
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once="true">
                 <img src="./img/course/img_02.jpg" alt="" style="opacity: 0.5;">
                 <div class="info">
                     <p class="card_title">半永久全科班課程</p>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once = "true">
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once="true">
                 <img src="./img/course/img_03.jpg" alt="" style="opacity: 0.5;">
                 <div class="info">
                     <p class="card_title">睫毛捲翹管理課程</p>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once = "true">
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once="true">
                 <img src="./img/course/img_04.jpg" alt="" style="opacity: 0.5;">
                 <div class="info">
                     <p class="card_title">皮膚管理課程</p>
@@ -162,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once = "true">
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once="true">
                 <img src="./img/course/img_05.jpg" alt="" style="opacity: 0.5;">
                 <div class="info">
                     <p class="card_title">3D、6D睫毛課程</p>
@@ -178,7 +178,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once = "true">
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear" data-aos-once="true">
                 <img src="./img/course/img_06.jpg" alt="" style="opacity: 0.5;">
                 <div class="info">
                     <p class="card_title">乙、丙級考照課程</p>
@@ -189,7 +189,7 @@
                         <li>美容技術士技能檢定</li>
                         <li>輔導考取國家證照</li>
                     </ul>
-                    <div class="card_btn" data-aos="flip-down" data-aos-once = "true">
+                    <div class="card_btn" data-aos="flip-down" data-aos-once="true">
                         <button onclick="location.href='./appointment.html'">立即預約</button>
                     </div>
                 </div>
@@ -307,12 +307,12 @@
             speed: 1200,
             loop: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiper_area .swiper-pagination",
                 clickable: true,
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper_area .swiper-button-next",
+                prevEl: ".swiper_area .swiper-button-prev",
             },
             autoplay: {
                 delay: 3000,
@@ -340,12 +340,12 @@
             speed: 1200,
             loop: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".modal_swiper_area .swiper-pagination",
                 clickable: true,
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".modal_swiper_area .swiper-button-next",
+                prevEl: ".modal_swiper_area .swiper-button-prev",
             },
             keyboard: true,
         });
@@ -358,7 +358,6 @@
             const pic_index = button.getAttribute('data-bs-pic');
             modal_swiper.slideTo(pic_index);
         })
-        
     </script>
 
     <!-- AOS -->
