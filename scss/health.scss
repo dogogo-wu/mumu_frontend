@@ -99,7 +99,8 @@
                 }
                 //術前準備 術後準備
                 .left_area, .right_area{
-                    background-color: $color_grey;
+                    // background-color: $color_grey;
+                    border: 3.6px #ecc7bf solid;
                     border-radius: 20px;
                     margin: 10px;
                     padding: 10px;
@@ -107,22 +108,23 @@
                     font-weight: 500;
                     .my_subtitle{
                         font-size: $title_font;
-                        padding-bottom: 16px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
                         text-align: center;
                     }
                 }
                 
-                // 中間分隔線
-                .divider2{
-                    width: 0px;
-                    margin: 10px 0px;
-                    background-color: #A9A9A9;
-                    border-radius: 5px;
-                    @media (min-width: $medium) {
-                        width: 5px;
-                        margin: 20px 0px;
-                    }
-                }
+                // // 中間分隔線
+                // .divider2{
+                //     width: 0px;
+                //     margin: 10px 0px;
+                //     background-color: #A9A9A9;
+                //     border-radius: 5px;
+                //     @media (min-width: $medium) {
+                //         width: 5px;
+                //         margin: 20px 0px;
+                //     }
+                // }
             }
         }
     }
