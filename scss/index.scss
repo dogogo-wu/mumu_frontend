@@ -599,14 +599,16 @@ h2 {
             align-self: center;
 
             h2 {
+                font-size: $title_font;
                 margin: 16px;
                 font-weight: 400;
+                margin-top: 20px;
             }
         }
 
         .accordion {
             margin: 40px;
-
+            margin-top: 10px;
             .accordion-item {
                 .accordion-header {
 
@@ -635,23 +637,18 @@ h2 {
                 }
             }
         }
-
+        
+        @media (max-width: $large) {
+            width: 85%;
+        }
         @media (max-width: $medium) {
-            width: 100%;
-
+            width: 95%;
+            padding-bottom: 20px;
             .accordion {
                 margin: 0;
             }
         }
 
-        @media (max-width: $large) {
-            width: 100%;
-        }
     }
 
-    @media (max-width: $medium) {
-        .faq {
-            padding-bottom: 20px;
-        }
-    }
 }
