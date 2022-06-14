@@ -160,6 +160,7 @@ h2 {
 @media (min-width: 992px) {
   #mumu_faith .container #mumu_faith_content_and_notice {
     width: 50%;
+    margin-top: 0px;
   }
 }
 
