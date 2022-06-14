@@ -12,7 +12,7 @@ h2 {
 }
 
 #pink-top-area {
-  background-image: url("../img/index/pink-top.png");
+  background-image: url("../img/index/pink_top_mod.png");
   width: 100%;
   height: 10vh;
   background-position: center;
@@ -20,7 +20,7 @@ h2 {
 }
 
 #pink-bottom-area {
-  background-image: url("../img/index/pink-bottom.png");
+  background-image: url("../img/index/pink_bottom_mod.png");
   width: 100%;
   height: 10vh;
   background-position: center;
@@ -239,6 +239,20 @@ h2 {
   }
 }
 
+#para_ad {
+  background-image: url("../img/mumu_news_parallax_mod.jpg");
+  background-attachment: fixed;
+  background-position: left -120px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  #para_ad {
+    background-position: left center;
+  }
+}
+
 #mumu_advertisement {
   width: 100%;
   height: 80vh;
@@ -248,8 +262,17 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   color: #6A6A6A;
+  position: relative;
+}
+
+#mumu_advertisement .ad_mySwiper {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#mumu_advertisement .ad_mySwiper .swiper-slide {
+  background-color: rgba(255, 255, 255, 0) !important;
 }
 
 #mumu_advertisement .services_title {
@@ -575,6 +598,20 @@ h2 {
 
 #mumu_services #myServiceModal .modal-body .myser_content ul li {
   margin: 8px 0px;
+}
+
+#para_faq {
+  background-image: url("../img/mumu_faq_parallax_mod.jpg");
+  background-attachment: fixed;
+  background-position: left -120px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  #para_faq {
+    background-position: left center;
+  }
 }
 
 #faq {

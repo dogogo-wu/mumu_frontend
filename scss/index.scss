@@ -1,35 +1,41 @@
 @import 'variable';
 
-h2{
+h2 {
     font-size: 24px;
 }
-.title{
+
+.title {
     color: #6A6A6A
 }
+
 .content {
     font-size: 16px;
     color: #5A705C;
 }
 
 //粉紅色上端
-#pink-top-area{
-    background-image: url('../img/index/pink-top.png');
+#pink-top-area {
+    background-image: url('../img/index/pink_top_mod.png');
+
     width: 100%;
-    height: 10vh;;
+    height: 10vh;
     background-position: center;
     background-size: cover;
 }
+
 //粉紅色下端
-#pink-bottom-area{
-    background-image: url('../img/index/pink-bottom.png');
+#pink-bottom-area {
+    background-image: url('../img/index/pink_bottom_mod.png');
+
     width: 100%;
     height: 10vh;
     background-position: center;
     background-size: cover;
 
 }
+
 //暮沐理念
-#mumu_faith{
+#mumu_faith {
     margin-top: -5px;
     margin-bottom: -5px;
     background-color: $color_primary;
@@ -39,9 +45,9 @@ h2{
         display: flex;
         height: 85vh;
     }
-    
 
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -52,9 +58,10 @@ h2{
             align-items: center;
         }
 
-        #mumu_faith_slogan{
+        #mumu_faith_slogan {
             width: 50%;
             height: 360px;
+
             // background-color: aqua;
             @media (max-width:$large) {
                 height: 450px;
@@ -63,7 +70,7 @@ h2{
             }
 
 
-            #mumu_slogan_frame{
+            #mumu_slogan_frame {
                 width: 300px;
                 height: 350px;
                 border: 3px solid rgb(255, 255, 255);
@@ -75,17 +82,17 @@ h2{
                     border: none;
 
                 }
-                
 
-                
-                #mumu_slogan_brush{
+
+
+                #mumu_slogan_brush {
                     width: 300px;
                     height: 350px;
                     // background-color: rgb(255, 231, 200);
                     position: relative;
-                
-                    .mumu_brush{
-                        display: none;         
+
+                    .mumu_brush {
+                        display: none;
 
                         @media (min-width:$large) {
                             display: block;
@@ -100,24 +107,27 @@ h2{
                         }
 
                     }
-                    .mumu_logo_name{
+
+                    .mumu_logo_name {
                         width: 50px;
                         position: absolute;
                         left: 120px;
                         top: 50px;
                     }
-                    .slogan_contents{
+
+                    .slogan_contents {
                         position: absolute;
                         z-index: 0;
                         top: 150px;
                         left: 10px;
-                       
-                        p{
-                            color: rgb(255, 255, 255);                      
+
+                        p {
+                            color: rgb(255, 255, 255);
                         }
                     }
                 }
-                .studio{
+
+                .studio {
                     font-size: 12px;
                     margin: 0 auto;
                     color: rgb(255, 255, 255);
@@ -127,7 +137,8 @@ h2{
             }
 
         }
-        #mumu_faith_content_and_notice{
+
+        #mumu_faith_content_and_notice {
             width: 100%;
             // height: 600px;
             // background-color: aqua;
@@ -137,7 +148,8 @@ h2{
                 width: 50%;
 
             }
-            .mumu_faith_content{
+
+            .mumu_faith_content {
 
                 width: 100%;
                 background-color: #7a847c;
@@ -159,36 +171,41 @@ h2{
                     border: 2px solid #ffffff;
                     border-radius: 15px;
                 }
-                .img_box{
 
-                
+                .img_box {
+
+
                     @media (min-width:$large) {
                         // background-color: aquamarine;
                         width: 120px;
                     }
+
                     @media (min-width:$xl) {
                         // background-color: rgb(240, 127, 255);
                         width: 150px;
                     }
-                    
-                    
+
+
                 }
-                
-                .mumu_content_words{
+
+                .mumu_content_words {
                     color: #ffffff;
                 }
             }
-            .flower_img{
-                width: 80px;
-            }
-            .material_img{
-                width: 80px;
-            }
-            .service_img{
+
+            .flower_img {
                 width: 80px;
             }
 
-            .mumu_faith_notice{
+            .material_img {
+                width: 80px;
+            }
+
+            .service_img {
+                width: 80px;
+            }
+
+            .mumu_faith_notice {
                 font-size: $text_font;
                 width: 100%;
                 // background-color: #5A705C;
@@ -197,42 +214,67 @@ h2{
                 @media (min-width:$large) {
                     width: 80%;
                 }
-                
+
             }
         }
     }
-   
+
 
 }
+
+// 包ad，parallax用
+#para_ad{
+    background-image: url("../img/mumu_news_parallax_mod.jpg");
+    background-attachment: fixed;
+    background-position: left -120px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: $medium) {
+        background-position: left center;
+    }
+}
+
 //卡片區（原環境照）
-#mumu_advertisement{
+#mumu_advertisement {
     width: 100%;
     height: 80vh;
     display: flex;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba($color: #fff, $alpha: 0.0);
     color: $color_txt;
+    position: relative;
 
 
-    .services_title{
+    // 把swiper背景變透明
+    .ad_mySwiper {
+        background-color: rgba($color: #fff, $alpha: 0.0);
+
+        .swiper-slide {
+            background-color: rgba($color: #fff, $alpha: 0.0) !important;
+        }
+    }
+
+    .services_title {
         font-size: $title_font;
         margin-bottom: 50px;
         margin-top: -20px;
 
-        .title_dot_line{
-            .dot{
+        .title_dot_line {
+            .dot {
                 width: 8px;
                 height: 8px;
                 background-color: #6a6a6a;
-                border-radius: 50px ;
+                border-radius: 50px;
             }
-            .dot_line{
+
+            .dot_line {
                 width: 200px;
                 height: 1px;
                 background-color: #6a6a6a;
             }
         }
     }
+
     .swiper {
         width: 80%;
         height: 100%;
@@ -242,7 +284,7 @@ h2{
             text-align: center;
             font-size: 18px;
             background: #fff;
-    
+
             /* Center slide text vertically */
             display: -webkit-box;
             display: -ms-flexbox;
@@ -264,64 +306,72 @@ h2{
                 object-fit: cover;
             }
         }
+
         .swiper-pagination-bullet-active {
-			background-color: #95AFD6;
-			
-		}
+            background-color: #95AFD6;
+
+        }
     }
 
-    .modal_swiper_area{
-		width: 100%;
-		.modal_swiper {
-			width: 100%;
-			height: 65vh;
-			margin: 20px auto;
-			@media (min-width: $large) {
-				width: unset;
-				height: 75vh;
-			}
-			.swiper-slide{
-				/* Center slide text vertically */
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: -webkit-flex;
-				display: flex;
-				-webkit-box-pack: center;
-				-ms-flex-pack: center;
-				-webkit-justify-content: center;
-				justify-content: center;
-				-webkit-box-align: center;
-				-ms-flex-align: center;
-				-webkit-align-items: center;
-				align-items: center;
-				width: 100%;
-				img{
-					display: block;
-					width: 100%;
-					height: 65vh;
-					object-fit: contain;
-					object-position: center;
-					border-radius: 5px;
-					@media (min-width: $large) {
-						width: unset;
-						height: 75vh;
-					}
-				}
-			}
+    .modal_swiper_area {
+        width: 100%;
 
-		}
-		.swiper-pagination-bullet-active {
-			background-color: #95AFD6;
-		}
-	}
+        .modal_swiper {
+            width: 100%;
+            height: 65vh;
+            margin: 20px auto;
 
-	#myModal{
-		background-color: rgba(black, 0.5);	
-	}
-    
+            @media (min-width: $large) {
+                width: unset;
+                height: 75vh;
+            }
+
+            .swiper-slide {
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                width: 100%;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 65vh;
+                    object-fit: contain;
+                    object-position: center;
+                    border-radius: 5px;
+
+                    @media (min-width: $large) {
+                        width: unset;
+                        height: 75vh;
+                    }
+                }
+            }
+
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #95AFD6;
+        }
+    }
+
+    #myModal {
+        background-color: rgba(black, 0.5);
+    }
+
 }
+
 //服務項目
-#mumu_services{
+#mumu_services {
     margin-top: -5px;
     margin-bottom: -5px;
     background-color: $color_primary;
@@ -329,37 +379,42 @@ h2{
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    .swiper{
+
+    .swiper {
         margin-top: 20px;
         display: none;
-        img{
+
+        img {
             opacity: 0.7;
         }
     }
-    .content{
+
+    .content {
 
         display: none;
     }
 
-    .services_title{
+    .services_title {
         font-size: $title_font;
 
 
-        .title_dot_line{
-            .dot{
+        .title_dot_line {
+            .dot {
                 width: 8px;
                 height: 8px;
                 background-color: #6a6a6a;
-                border-radius: 50px ;
+                border-radius: 50px;
             }
-            .dot_line{
+
+            .dot_line {
                 width: 200px;
                 height: 1px;
                 background-color: #6a6a6a;
             }
         }
     }
-    .services_card{
+
+    .services_card {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -368,44 +423,49 @@ h2{
         padding-top: 20px;
         padding-bottom: 20px;
 
-        .sevice_cards_container{
+        .sevice_cards_container {
             width: 200px;
             height: 200px;
             margin: 10px;
             background-color: white;
             border-radius: 15px 15px 0px 0px;
             transition: 0.2s;
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
                 box-shadow: 2px 2px 4px 1px gray;
                 transition: 0.2s;
             }
+
             @media (max-width:$small) {
                 width: 150px;
                 height: 150px;
             }
 
-            .each_service_option{
+            .each_service_option {
                 font-size: $title_font;
                 height: 30%;
             }
 
-            .service_img{
+            .service_img {
                 width: 100%;
                 height: 70%;
-                img{
-                    width:100%;
+
+                img {
+                    width: 100%;
                     height: 100%;
                     object-fit: cover;
 
                 }
             }
-            
+
         }
     }
-    .button{
+
+    .button {
         margin-top: 50px;
-        button{
+
+        button {
             color: #6A6A6A;
             width: 126px;
             height: 52px;
@@ -416,6 +476,7 @@ h2{
             box-shadow: 2px 4px 3px rgba($color: #6A6A6A, $alpha: 1.0);
             margin-left: 20px;
             margin-right: 20px;
+
             @media (max-width: $medium) {
                 width: 100px;
                 margin: auto 10px;
@@ -423,136 +484,173 @@ h2{
 
         }
     }
-    .button button:hover{
+
+    .button button:hover {
         color: white;
-        background-color:#6A6A6A;
+        background-color: #6A6A6A;
     }
+
     @media (max-width: $medium) {
 
-        .button :nth-child(2){
+        .button :nth-child(2) {
             display: none;
         }
-        button{
+
+        button {
             margin-left: 20px;
             margin-right: 20px;
         }
-        .swiper-slide img{
+
+        .swiper-slide img {
             object-fit: contain;
         }
     }
 
-    #myServiceModal{
+    #myServiceModal {
         background-color: rgba(black, 0.5);
-        .modal-dialog{
+
+        .modal-dialog {
             max-width: $small;
         }
-        .modal-header{
-            button{
+
+        .modal-header {
+            button {
                 padding: .5rem .5rem;
                 margin: -.5rem -.5rem -.5rem auto;
             }
         }
-        .modal-body{
+
+        .modal-body {
             display: flex;
             align-items: center;
             flex-direction: column;
+
             @media (min-width: $small) {
                 flex-direction: row;
             }
-            .myser_img_area{
+
+            .myser_img_area {
                 width: 250px;
                 height: 175px;
                 margin-right: 0px;
+
                 @media (min-width: $small) {
                     margin-right: 36px;
                 }
-                img{
+
+                img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     border-radius: 8px;
                 }
             }
-            .myser_content{
-                ul{
+
+            .myser_content {
+                ul {
                     margin-left: 0px;
                     margin-bottom: 0px;
                     padding-top: 16px;
+
                     @media (min-width: $small) {
                         margin-left: 16px;
                         padding-top: 0px;
                     }
-                    li{
+
+                    li {
                         margin: 8px 0px;
                     }
                 }
             }
         }
-        
+
     }
 }
+
+// 包FAQ，parallax用
+#para_faq{
+    background-image: url("../img/mumu_faq_parallax_mod.jpg");
+    background-attachment: fixed;
+    background-position: left -120px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: $medium) {
+        background-position: left center;
+    }
+}
+
 //Q&A
-#faq{
+#faq {
     height: 100vh;
     position: relative;
     color: #6A6A6A;
-    
-    .faq{
+    .faq {
         width: 50%;
         background-color: $color_primary;
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         border-radius: 20px;
+
         .title {
             display: flex;
             justify-content: center;
             align-self: center;
-            
-            h2{
+
+            h2 {
                 margin: 16px;
                 font-weight: 400;
             }
         }
-        .accordion{
+
+        .accordion {
             margin: 40px;
-            .accordion-item{
-                .accordion-header{
+
+            .accordion-item {
+                .accordion-header {
+
                     //Q&A的問題列表
-                    .accordion-button{
+                    .accordion-button {
                         color: #6A6A6A;
                         font-size: 16px;
                         background-color: $color_primary;
                     }
-                    .accordion-button:not(.collapsed){
+
+                    .accordion-button:not(.collapsed) {
                         color: #6A6A6A;
                     }
-                    .accordion-button:hover{
+
+                    .accordion-button:hover {
                         background-color: #E7E7E7;
                         padding: 20px;
                     }
                 }
-                .accordion-collapse{
-                    .accordion-body{
+
+                .accordion-collapse {
+                    .accordion-body {
                         background-color: white;
                         color: #6A6A6A;
                     }
                 }
             }
         }
+
         @media (max-width: $medium) {
             width: 100%;
-            .accordion{
+
+            .accordion {
                 margin: 0;
             }
-        }  
+        }
+
         @media (max-width: $large) {
             width: 100%;
         }
     }
+
     @media (max-width: $medium) {
-        .faq{
+        .faq {
             padding-bottom: 20px;
         }
     }
