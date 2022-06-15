@@ -225,13 +225,12 @@ h2 {
 
 // 包ad，parallax用
 #para_ad{
-    background-image: url("../img/index/mumu_news_parallax_mod.jpg");
-    background-attachment: fixed;
-    background-position: left -120px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-width: $medium) {
+    @media (min-width: $large) {
+        background-image: url("../img/index/mumu_news_parallax_mod.jpg");
+        background-attachment: fixed;
         background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -579,13 +578,12 @@ h2 {
 
 // 包FAQ，parallax用
 #para_faq{
-    background-image: url("../img/index/mumu_faq_parallax_mod.jpg");
-    background-attachment: fixed;
-    background-position: left -120px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-width: $medium) {
+    @media (min-width: $large) {
+        background-image: url("../img/index/mumu_faq_parallax_mod.jpg");
+        background-attachment: fixed;
         background-position: left center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
