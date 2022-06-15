@@ -225,7 +225,7 @@ h2 {
 
 // 包ad，parallax用
 #para_ad{
-    @media (min-width: $large) {
+    @media (min-width: $xl) {
         background-image: url("../img/index/mumu_news_parallax_mod.jpg");
         background-attachment: fixed;
         background-position: left center;
@@ -578,7 +578,7 @@ h2 {
 
 // 包FAQ，parallax用
 #para_faq{
-    @media (min-width: $large) {
+    @media (min-width: $xl) {
         background-image: url("../img/index/mumu_faq_parallax_mod.jpg");
         background-attachment: fixed;
         background-position: left center;
