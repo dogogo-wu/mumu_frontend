@@ -225,13 +225,22 @@ h2 {
 
 // 包ad，parallax用
 #para_ad{
-    background-image: url("../img/index/mumu_news_parallax_mod.jpg");
-    background-attachment: fixed;
-    background-position: left -120px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-width: $medium) {
-        background-position: left center;
+    position: relative;
+    overflow: hidden;
+    .myrellax{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: -120px 50%;
+            @media (min-width: $medium) {
+                object-position: 0px 50%;
+            }
+        }
     }
 }
 
@@ -579,13 +588,22 @@ h2 {
 
 // 包FAQ，parallax用
 #para_faq{
-    background-image: url("../img/index/mumu_faq_parallax_mod.jpg");
-    background-attachment: fixed;
-    background-position: left -120px center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-width: $medium) {
-        background-position: left center;
+    position: relative;
+    overflow: hidden;
+    .myrellax{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: -120px 50%;
+            @media (min-width: $medium) {
+                object-position: 0px 50%;
+            }
+        }
     }
 }
 
