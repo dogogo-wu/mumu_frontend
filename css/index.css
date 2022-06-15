@@ -242,30 +242,16 @@ h2 {
 }
 
 #para_ad {
-  position: relative;
-  overflow: hidden;
-}
-
-#para_ad .myrellax {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
-}
-
-#para_ad .myrellax img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: -120px 50%;
-     object-position: -120px 50%;
+  background-image: url("../img/index/mumu_news_parallax_mod.jpg");
+  background-attachment: fixed;
+  background-position: left -120px center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
-  #para_ad .myrellax img {
-    -o-object-position: 0px 50%;
-       object-position: 0px 50%;
+  #para_ad {
+    background-position: left center;
   }
 }
 
@@ -629,30 +615,16 @@ h2 {
 }
 
 #para_faq {
-  position: relative;
-  overflow: hidden;
-}
-
-#para_faq .myrellax {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
-}
-
-#para_faq .myrellax img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: -120px 50%;
-     object-position: -120px 50%;
+  background-image: url("../img/index/mumu_faq_parallax_mod.jpg");
+  background-attachment: fixed;
+  background-position: left -120px center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
-  #para_faq .myrellax img {
-    -o-object-position: 0px 50%;
-       object-position: 0px 50%;
+  #para_faq {
+    background-position: left center;
   }
 }
 
