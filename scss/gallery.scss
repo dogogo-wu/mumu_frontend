@@ -163,7 +163,12 @@
 	}
 
 	.mymodal_all{
-		background-color: rgba(black, 0.5);	
+		background-color: rgba(black, 0.5);
+        .modal-dialog {
+            @media (min-width: $medium){
+                max-width: $medium
+            }
+        }
 	}
     
 }
