@@ -32,12 +32,15 @@ h2 {
     background-position: center;
     background-size: cover;
 
+    position: relative;
+    top: -5px;
+    left: 0;
 }
 
 //暮沐理念
 #mumu_faith {
     margin-top: -5px;
-    margin-bottom: -5px;
+    // margin-bottom: -5px;
     background-color: $color_primary;
     color: $color_txt;
 
@@ -382,7 +385,7 @@ h2 {
 //服務項目
 #mumu_services {
     margin-top: -5px;
-    margin-bottom: -5px;
+    // margin-bottom: -5px;
     background-color: $color_primary;
     color: $color_txt;
     width: 100%;
